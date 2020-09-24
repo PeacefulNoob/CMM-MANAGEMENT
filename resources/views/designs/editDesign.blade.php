@@ -2,18 +2,29 @@
 @section('content')
 <div class="container">
 
-<form action="/designs/{{$design->id}}"  method="POST" enctype="multipart/form-data">
-    @method('PATCH')
-    @csrf 
-  <div class="form-group">
-    <label for="title">Design</label>
-    <input type="text" class="form-control"  name="title"  value="{{$design->title}}">
-  </div>
-  <div class="form-group">
-    <label for="description1">Description</label>
-    <input type="text" class="form-control" id="description1" name="description" value="{{$design->description}}">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <form action="/designs/{{ $design->id }}" method="POST" enctype="multipart/form-data">
+        @method('PATCH')
+        @csrf
+        <div class="form-group">
+            <label for="title">Design</label>
+            <input type="text" class="form-control" name="title" value="{{ $design->title }}">
+        </div>
+        <div class="form-group">
+            <label for="description1">Description</label>
+            <textarea class="ckeditor form-control" name="description">{{ $design->description }}</textarea>
+  
+        </div>
+        <div class="form-group">
+                @foreach($design->images as $image)
+                    <img src="/images/{{ $image->image }}" alt="" style="width:100px;">
+                        <div style="margin:10px;">
+                            <img width="50px" src="" alt="" id="image{{ $image->id }}">
+                            <input id="input-file{{ $image->id }}" class="upload-image" type="file" name="photos{{ $image->id }}"
+                                accept="image/jpeg, image/png">
+                        </div>
+                    @endforeach
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </div>
 @endsection

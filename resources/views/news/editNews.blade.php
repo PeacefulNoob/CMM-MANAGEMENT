@@ -11,7 +11,7 @@
   </div>
   <div class="form-group">
     <label for="description1">Description</label>
-    <input type="text" class="form-control" id="description1" name="description" value="{{$new->description}}">
+    <textarea class="ckeditor form-control" name="description"></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

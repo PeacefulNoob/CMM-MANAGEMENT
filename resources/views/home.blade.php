@@ -27,14 +27,14 @@
                         <p>{{ $design->title }}</p>
                     </td>
                     <td>
-                        <p>{{ $design->description }}
+                        <p>{!! $design->description !!}
                         </p>
                     </td>
                     
                     <td>
                         @can('admin')
                             
-                        <a href="{{ route('designs.edit',$design->id) }}"><button
+                        <a href="{{ route('designs.edit',$design) }}"><button
                             type="button" class="btn btn-primary">Edit</button></a> </td>
                                 @endcan
 

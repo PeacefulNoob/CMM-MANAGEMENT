@@ -27,7 +27,7 @@
                         <p>{{ $new->title }}</p>
                     </td>
                     <td>
-                        <p>{{ $new->description }}
+                        <p>{!! $new->description !!}
                         </p>
                     </td>
                     

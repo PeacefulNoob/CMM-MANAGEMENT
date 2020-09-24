@@ -123,7 +123,7 @@ class DesignContoller extends Controller
      * @param  \App\Design  $design
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,Design $design)
     {
         $validator = Validator::make($request->all(), [
             'title' => 'required',
@@ -135,28 +135,25 @@ class DesignContoller extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-        DB::table('designs')->where('id', $id)->update([
+        DB::table('designs')->where('id', $design->id)->update([
             'title' => $request->title,
             'description' => $request->description,
         ]);
-        for($i=0; $i<count($post->images); $i++) {
-
+        
+        foreach($design->images as $image){
+           $i = $image->id;
             if($request->hasfile('photos'.$i))
             {
-                $im = Image::find($request->{"imgid".$i});
+                $im = DImage::where('id', $i)->first();
                 if($im) {
-                    if($im->id == $request->{"imgid".$i}) {
                         $name = round(microtime(true) * 1000).'.'.$request->file('photos'.$i)->extension();
                         $request->file('photos'.$i)->move(public_path().'/images/', $name);
-    
-    
                         DB::table('design_images')
                         ->where('id', $im->id)
                         ->update(
-                            ['title' => $name
+                            ['image' => $name
                            ]
                         );
-                    }
                 }
             }
         }

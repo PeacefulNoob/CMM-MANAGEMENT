@@ -12,7 +12,7 @@
                 <h3>{{$design->title}}</h3>
                 @can('admin')
              <div class="adminButtons"> 
-             <a href="{{ route('designs.edit',$design->id) }}"><button
+             <a href="{{ route('designs.edit',$design) }}"><button
                  type="button" class="btn btn-primary">Edit</button></a> 
      
                  <form action="{{ route('designs.destroy',$design) }}" method="POST"  class="float-left">

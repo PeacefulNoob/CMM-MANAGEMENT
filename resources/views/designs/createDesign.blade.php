@@ -10,7 +10,8 @@
     </div>
     <div class="form-group">
       <label for="description1">Description</label>
-      <input type="text" class="form-control" id="description1" name="description" placeholder="Enter design packet description">
+      <textarea class="ckeditor form-control" name="description"></textarea>
+
     </div>
     <div class="form-group input-group control-group increment col-sm-10" style="padding: 15px;" >
       <label class="col-sm-2 col-sm-2 control-label" style="padding-left: 0px;">Add photos</label>
