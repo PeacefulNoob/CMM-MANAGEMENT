@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::resource('faqs','FaqController');
 Route::resource('designs','DesignContoller');
 Route::resource('news','NewsController');
+Route::resource('maintenances','MaintenanceController');
 
 
 Auth::routes();

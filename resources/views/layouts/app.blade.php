@@ -73,9 +73,12 @@
                                                 </a>
                                                 <a class="dropdown-item" href="/news/create">Add News Post
                                                 </a>
+                                             
+                                                <a class="dropdown-item" href="/news">List of all News
+                                                </a>
                                                 <a class="dropdown-item" href="/designs/create">Add Design
                                                 </a>
-                                                <a class="dropdown-item" href="/news">List of all News
+                                                <a class="dropdown-item" href="/maintenances/create">Add Maintenance
                                                 </a>
                                                 @endcan     
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

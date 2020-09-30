@@ -18,6 +18,7 @@ class AllSeeder extends Seeder
     {
        factory(App\News::class ,10)->create();
        factory(App\Design::class ,10)->create();
+       factory(App\Maintenance::class ,10)->create();
        factory(App\Faq::class ,10)->create();
        
     }

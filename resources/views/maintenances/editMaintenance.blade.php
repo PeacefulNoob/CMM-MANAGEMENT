@@ -2,21 +2,21 @@
 @section('content')
 <div class="container">
 
-    <form action="/designs/{{ $design->id }}" method="POST" enctype="multipart/form-data">
+    <form action="/maintenances/{{ $maintenance->id }}" method="POST" enctype="multipart/form-data">
         @method('PATCH')
         @csrf
         <div class="form-group">
-            <label for="title">Design</label>
-            <input type="text" class="form-control" name="title" value="{{ $design->title }}">
+            <label for="title">maintenance</label>
+            <input type="text" class="form-control" name="title" value="{{ $maintenance->title }}">
         </div>
         <div class="form-group">
             <label for="description1">Description</label>
-            <textarea class="ckeditor form-control" name="description">{{ $design->description }}</textarea>
+            <textarea class="ckeditor form-control" name="description">{{ $maintenance->description }}</textarea>
   
         </div>
         <div class="form-group">
-                @foreach($design->images as $image)
-                    <img src="/images/design/{{ $image->image }}" alt="" style="width:100px;">
+                @foreach($maintenance->images as $image)
+                    <img src="/images/maint/{{ $image->image }}" alt="" style="width:100px;">
                         <div style="margin:10px;">
                             <img width="50px" src="" alt="" id="image{{ $image->id }}">
                             <input id="input-file{{ $image->id }}" class="upload-image" type="file" name="photos{{ $image->id }}"

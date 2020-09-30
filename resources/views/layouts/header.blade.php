@@ -8,6 +8,7 @@
         </a>
         <a class="" href="/designs">
             designs            </a>
-        
+            <a class="" href="/maintenances">
+                maintenances            </a>
     </div>
 </nav>
