@@ -1,9 +1,18 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="homeMain">
+@include('components.modal_covid')
 
-    <div class="container">
+<div class="homeMain">
+    <div class="hero">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 style="font-size:50px">Lorem ipsum dolor sit amet, ex veri liberavisse duo. Vivendo</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="blogs my-5">
         <h1>News</h1>
 
         <div class="row my-5">
