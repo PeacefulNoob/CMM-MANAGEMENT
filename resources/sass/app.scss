@@ -21,6 +21,7 @@ body{
  }
 h1{
 font-weight: 700;
+color: #1D4C81;
 }
 h2{
     font-weight: 700;
@@ -108,7 +109,7 @@ margin-top: 2%;
     opacity: 0.5;
     width: 12px;
 }
-.gallery_owl {
+.property-index {
     position: relative;
     .owl-next, .owl-prev {
       width: 40px;
@@ -129,19 +130,22 @@ margin-top: 2%;
     }
     .owl-dots{
         position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(50%, 10%);
+        top: 15%;
+        left: 50%;
+        background-color: #ADDBEF;
+        transform: translate(-50%, 0%);
+        border-radius: 15px;
+        padding: 5px 20px;
         .owl-dot{
-            width: 10px;
-            height: 10px;
-            background: $primaryColor !important;
+            width: 15px;
+            height: 15px;
+            background: white !important;
             border-radius: 10px;
             margin: 3px;
             
         }
         .active{
-            background: $secondaryColor !important;
+            background: $primaryColor !important;
     
         }
       }
@@ -253,30 +257,7 @@ margin-top: 2%;
 .covid-header{
     display: flex;
 }
-.hero-car-image {
-    background: transparent url('/assets/images/cover_image/rentCarMain.png') 0% 0% no-repeat padding-box;
-   height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .hero-yacht-image {
-    background: transparent url('/assets/images/cover_image/rentYachtMain.png') 0% 0% no-repeat padding-box;
-   height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .hero-exc-image {
-    background: transparent url('/assets/images/cover_image/excMain.png') 0% 0% no-repeat padding-box;
-     height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+
   .hero-div{
     @include paddinglr;
     z-index: 2;
@@ -308,4 +289,20 @@ margin-top: 2%;
 }
 .card{
     border: none !important;
+}
+.naslovMain{
+    margin-bottom: 8%;
+}
+.property{
+  
+    @include marginTB;
+}
+.blogs_main{
+    @include marginTB;
+
+}
+.naslovMain{
+    p{
+        color: #7E7E7E;
+    }
 }

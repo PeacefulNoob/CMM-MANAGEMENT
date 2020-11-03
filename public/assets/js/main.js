@@ -1,11 +1,10 @@
 $(document).ready(function () {
-$('.gallery_owl').owlCarousel({
+$('.property-index').owlCarousel({
     responsiveClass:true,
     lazyLoad : true,
     items:1,
     loop: true,
     margin: 0,
-    nav: true,
     dots: true,
 })
  $('.gallery_single_owl').owlCarousel({

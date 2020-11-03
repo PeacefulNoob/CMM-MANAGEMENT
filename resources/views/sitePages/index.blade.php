@@ -12,33 +12,100 @@
             </div>
         </div>
     </div>
-    <div class="blogs my-5">
-        <h1>News</h1>
 
-        <div class="row my-5">
-            @forelse ($news as $new)
-            <div class="col-sm-12">
-            <h3>{{$new->title}}</h3>
-            <p class="gray">{{$new->created_at}}</p>
-            <div><p>{!!$new->description!!}</p></div>
-            @can('admin')
-            <div class="adminButtons"> 
-            <a href="{{ route('news.edit',$new->id) }}"><button
-                type="button" class="btn btn-primary">Edit</button></a> 
-  
-                <form action="{{ route('news.destroy',$new) }}" method="POST"  class="float-left">
-                  @csrf
-                  {{ method_field('DELETE') }}
-                  <button type="submit" class="btn btn-warning">Delete</button>
-              </form>
-          </div>
-            @endcan
+    <div class="paddinglr blogs_main ">
+        <div class="owl-navigation owl-carousel blogs_owl owl-theme ">
+            @foreach($blogs as $blog)
+                <div class="card" style="border:none">
+                    <img class="card-img-top" src="/assets/images/{{ $blog->image }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $blog->title }}</h5>
+
+                    </div>
+                    <div class="card-footer">
+                        <p> {{ $blog->created_at }}</p>
+                        @can('admin')
+                            <div class="adminButtons">
+                                <a href="{{ route('news.edit',$new->id) }}"><button
+                                        type="button" class="btn btn-primary">Edit</button></a>
+
+                                <form action="{{ route('news.destroy',$new) }}" method="POST"
+                                    class="float-left">
+                                    @csrf
+                                    {{ method_field('DELETE') }}
+                                    <button type="submit" class="btn btn-warning">Delete</button>
+                                </form>
+                            </div>
+                        @endcan
+                    </div>
+                </div>
+
+            @endforeach
+        </div>
+
+    </div>
+    <div class="paddinglr property ">
+        
+        <div class="owl-navigation owl-carousel property-index owl-theme ">
+           
+            <div class="row m-0 ">
+                <div class="col-12   text-center naslovMain">
+                    <h1>Furnishing & Design</h1>
+                   <p>Lorem ipsum dolor sit amet, ex veri liberavisse duo.</p>
+                </div>
+                <div class="col-7">
+                    <img src="/assets/images/garden.png" alt="">
+                </div>
+                <div class="col-4 ml-auto">
+                    <h3>What does it mean?</h3>
+                    <p>Lorem ipsum dolor sit amet, ex veri liberavisse duo. Vivendo qualisque voluptatum duo id. His
+                        omittam accusata at. Veri primis eum an, eu eos tota aliquip molestie, duo vide minimum
+                        efficiantur an. Ad mucius pertinacia incorrupte duo, alienum repudiare eu sed. Has ea quis
+                        torquatos, eum no errem causae persius. Eu vix quem graeci, ex vis omnium definitionem, mel no
+                        tantas omnesque facilisis. Voluptua conceptam adversarium ne his, modus partem tincidunt.</p>
+                    <a href="#">Read more</a>
+                </div>
+
             </div>
-            @empty
-            <div class="col-sm-12"> NO NEWS</div>
+            
+            <div class="row m-0 ">
+                <div class="col-12  text-center naslovMain">
+                    <h1>Property Maintenance</h1>
+                   <p>Lorem ipsum dolor sit amet, ex veri liberavisse duo.</p>
+                </div>
+                <div class="col-7">
+                    <img src="/assets/images/garden.png" alt="">
+                </div>
+                <div class="col-4 ml-auto">
+                    <h3>What does it mean?</h3>
+                    <p>Lorem ipsum dolor sit amet, ex veri liberavisse duo. Vivendo qualisque voluptatum duo id. His
+                        omittam accusata at. Veri primis eum an, eu eos tota aliquip molestie, duo vide minimum
+                        efficiantur an. Ad mucius pertinacia incorrupte duo, alienum repudiare eu sed. Has ea quis
+                        torquatos, eum no errem causae persius. Eu vix quem graeci, ex vis omnium definitionem, mel no
+                        tantas omnesque facilisis. Voluptua conceptam adversarium ne his, modus partem tincidunt.</p>
+                    <a href="#">Read more</a>
+                </div>
 
-            @endforelse
-       
+            </div>
+            <div class="row m-0 ">
+                <div class="col-12  text-center naslovMain">
+                    <h1>Renovations & Repairs</h1>
+                   <p>Lorem ipsum dolor sit amet, ex veri liberavisse duo.</p>
+                </div>
+                <div class="col-7">
+                    <img src="/assets/images/garden.png" alt="">
+                </div>
+                <div class="col-4 ml-auto">
+                    <h3>What does it mean?</h3>
+                    <p>Lorem ipsum dolor sit amet, ex veri liberavisse duo. Vivendo qualisque voluptatum duo id. His
+                        omittam accusata at. Veri primis eum an, eu eos tota aliquip molestie, duo vide minimum
+                        efficiantur an. Ad mucius pertinacia incorrupte duo, alienum repudiare eu sed. Has ea quis
+                        torquatos, eum no errem causae persius. Eu vix quem graeci, ex vis omnium definitionem, mel no
+                        tantas omnesque facilisis. Voluptua conceptam adversarium ne his, modus partem tincidunt.</p>
+                    <a href="#">Read more</a>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

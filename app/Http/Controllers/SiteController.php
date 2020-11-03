@@ -9,8 +9,8 @@ class SiteController extends Controller
 {
     public function index()
     {
-     $news = News::all();
-     return view('sitePages.index',compact('news'));
+     $blogs = News::all();
+     return view('sitePages.index',compact('blogs'));
 
     }
 

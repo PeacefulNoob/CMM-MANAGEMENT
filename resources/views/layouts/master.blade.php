@@ -29,7 +29,7 @@
     @include('layouts.header')
 
     <div id="app">
-        <main class="py-4">
+        <main class="">
             @include('components.alerts')
             @yield('content')
         </main>
