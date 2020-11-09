@@ -12,10 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('covids','CovidController');
 Route::resource('faqs','FaqController');
 Route::resource('designs','DesignContoller');
 Route::resource('news','NewsController');
 Route::resource('maintenances','MaintenanceController');
+Route::resource('repairs','RepairsController');
+
+Route::get('/all_news','NewsController@all_news');
+Route::get('/about', 'SiteController@about')->name('about');
 
 
 Auth::routes();
@@ -41,3 +46,8 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
     
 });
 Route::get('/', 'SiteController@index')->name('home');
+
+Route::post('Design', [
+    'uses' => 'EmailController@design',
+    'as' => 'contact.store.main'
+]);

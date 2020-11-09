@@ -21,7 +21,17 @@ class NewsController extends Controller
         $news = News::all();
          return view('admin.allNews',compact('news'));
     }
-
+    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function all_news()
+    {
+        $news = News::all();
+         return view('sitePages.news',compact('news'));
+    }
     /**
      * Show the form for creating a new resource.
      *

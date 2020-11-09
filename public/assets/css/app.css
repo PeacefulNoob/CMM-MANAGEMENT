@@ -50,11 +50,11 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #08338F !important;
+  color: #1D4C81 !important;
 }
 
 .vipLink {
-  background-color: #08338F;
+  background-color: #1D4C81;
   border-radius: 5px;
   padding: 0px 30px !important;
 }
@@ -68,7 +68,7 @@
 }
 
 .dropdown-item {
-  color: #08338F !important;
+  color: #1D4C81 !important;
   display: inline-block !important;
 }
 
@@ -82,7 +82,7 @@
 
 footer {
   padding-top: 1%;
-  background: #08338F;
+  background: #1D4C81;
   padding-top: 5%;
   color: white !important;
   font-weight: 300;
@@ -220,21 +220,35 @@ body {
   font-size: 14px;
 }
 
+img {
+  width: 100%;
+}
+
 p {
   font-weight: 300;
 }
 
 h1 {
   font-weight: 700;
-  color: #1D4C81;
+  font-size: 2.25rem;
 }
 
 h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
+.h3, h3 {
+  font-size: 1.625rem;
   font-weight: 700;
 }
 
 h6 {
   color: white;
+}
+
+.h5, h5 {
+  font-size: 1.125rem;
 }
 
 body {
@@ -280,7 +294,7 @@ body {
 }
 
 .coronaSection a {
-  color: #08338F;
+  color: #1D4C81;
 }
 
 .peoples {
@@ -371,11 +385,11 @@ body {
 }
 
 .property-index .owl-dots .active {
-  background: #08338F !important;
+  background: #1D4C81 !important;
 }
 
 .card-body, .card-footer {
-  background-color: #08338F;
+  background-color: #1D4C81;
   color: white;
 }
 
@@ -412,7 +426,7 @@ body {
 .gallery_single_owl .owl-dots .owl-dot {
   width: 10px;
   height: 10px;
-  background: #08338F !important;
+  background: #1D4C81 !important;
   border-radius: 10px;
   margin: 3px;
 }
@@ -444,15 +458,14 @@ body {
 }
 
 .form-property {
-  background-color: #08338F;
-  padding: 40px;
+  background-color: white;
   border-radius: 5px;
-  color: white !important;
+  color: #1D4C81 !important;
 }
 
 .btn-inquiry {
-  background: #fff;
-  color: #08338F;
+  background: #1D4C81;
+  color: #fff;
   font-weight: 700;
   padding: 10px 30px;
 }
@@ -463,17 +476,17 @@ body {
 }
 
 .form_inquiry {
-  border: 1px solid #fff;
+  border: 1px solid #1D4C81;
   margin: 0 !important;
   border-radius: 5px;
 }
 
 .form_inquiry_right {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #1D4C81;
 }
 
 .form_inquiry_bot {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #1D4C81;
 }
 
 .form-group {
@@ -544,9 +557,74 @@ body {
 .blogs_main {
   margin-top: 3%;
   margin-bottom: 3%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .naslovMain p {
   color: #7E7E7E;
+}
+
+.padding {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.abouts1 {
+  padding-top: 8% !important;
+  background-color: #1D4C81;
+  color: white;
+}
+
+.abouts2 {
+  color: #1D4C81;
+}
+
+.abouts3 {
+  background-color: #101010;
+  color: white;
+}
+
+.abouts4 {
+  background-color: #1D4C81;
+  color: white;
+}
+
+.abouts5 {
+  color: #1D4C81;
+}
+
+.abouts6 {
+  color: #1D4C81;
+}
+
+.designs_page p {
+  color: #7E7E7E;
+  font-size: 18px;
+}
+
+.designs_page .section1 h1 {
+  color: #1D4C81;
+  font-size: 64px !important;
+}
+
+.designs_page .section1 p {
+  font-weight: bold;
+}
+
+.designs_page .section2 h3 {
+  padding-bottom: 25px;
+}
+
+.designs_page .section3 {
+  color: white;
+  background-color: #1D4C81;
+}
+
+.designs_page .section4 h3 {
+  width: 70%;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=app.css.map */

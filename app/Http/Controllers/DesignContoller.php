@@ -135,11 +135,9 @@ class DesignContoller extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-        DB::table('designs')->where('id', $design->id)->update([
-            'title' => $request->title,
-            'description' => $request->description,
-        ]);
-        
+    
+        Design::find($design->id)->update($request->all());
+
         foreach($design->images as $image){
            $i = $image->id;
             if($request->hasfile('photos'.$i))
@@ -157,7 +155,7 @@ class DesignContoller extends Controller
                 }
             }
         }
-        return redirect()->back()->with('success', 'Design packet   updated !');
+        return redirect()->back()->with('success', 'Design packet updated !');
     }
 
     /**
@@ -168,6 +166,7 @@ class DesignContoller extends Controller
      */
     public function destroy(Design $design)
     {
-        //
+        $design->delete();
+        return redirect()->back();
     }
 }

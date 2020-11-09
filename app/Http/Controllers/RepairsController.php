@@ -2,16 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Maintenance;
+use App\Repair;
 use Illuminate\Http\Request;
 
-class MaintenanceController extends Controller
+class RepairsController extends Controller
 {
-
-    public function __construct()
-    {
-        $this->middleware('auth', ['except' => ['index']]);
-    }
     /**
      * Display a listing of the resource.
      *
@@ -19,8 +14,8 @@ class MaintenanceController extends Controller
      */
     public function index()
     {
-        $maintenances = Maintenance::all();
-        return view('sitePages.maintenances',compact('maintenances'));
+        $repairs = Repair::all();
+        return view('sitePages.repairs',compact('repairs'));
     }
 
     /**
@@ -30,7 +25,7 @@ class MaintenanceController extends Controller
      */
     public function create()
     {
-        return view('maintenances.createMaintenance');
+        return view('repairs.createRepair');
 
     }
 
@@ -56,41 +51,41 @@ class MaintenanceController extends Controller
         }
 
         // Create 
-        $maintenance = new Maintenance;
-        $maintenance->title = $request->input('title');
-        $maintenance->description = $request->input('description');
-        $maintenance->user_id =  $userId;
-        $maintenance->save();
+        $repair = new Repair;
+        $repair->title = $request->input('title');
+        $repair->description = $request->input('description');
+        $repair->user_id =  $userId;
+        $repair->save();
 
         if($request->hasfile('photos'))
         {
            foreach($request->file('photos') as $file)
            {
                $name = round(microtime(true) * 1000).'.'.$file->extension();
-               $file->move(public_path().'/images/maint/', $name);
+               $file->move(public_path().'/images/repair/', $name);
                $data[] = $name;
    
-               $image= new MImage();
+               $image= new RImage();
                $image->name=json_encode($data);
-               DB::table('maintenance_images')
+               DB::table('repair_images')
                    ->insert(
                        ['image' => $name,
-                       'maintenance_id' =>  $maintenance->id]
+                       'repair_id' =>  $repair->id]
                    );
            }
    
         }
 
-        return redirect()->back()->with('success', 'Maintenance packet added');
+        return redirect()->back()->with('success', 'Repair packet added');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Maintenance  $maintenance
+     * @param  \App\Repair  $repair
      * @return \Illuminate\Http\Response
      */
-    public function show(Maintenance $maintenance)
+    public function show(Repair $repair)
     {
         //
     }
@@ -98,25 +93,24 @@ class MaintenanceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Maintenance  $maintenance
+     * @param  \App\Repair  $repair
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $maintenance = Maintenance::find($id);
+        $repair = Repair::find($id);
 
-        return view('maintenances.editMaintenance',compact('maintenance'));
-
+        return view('repairs.editRepair',compact('repair'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Maintenance  $maintenance
+     * @param  \App\Repair  $repair
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Maintenance $maintenance)
+    public function update(Request $request, Repair $repair)
     {
         $validator = Validator::make($request->all(), [
             'title' => 'required',
@@ -128,18 +122,18 @@ class MaintenanceController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-      
-        Maintenance::find($maintenance->id)->update($request->all());
+    
+        Repair::find($repair->id)->update($request->all());
 
-        foreach($maintenance->images as $image){
+        foreach($repair->images as $image){
            $i = $image->id;
             if($request->hasfile('photos'.$i))
             {
-                $im = DImage::where('id', $i)->first();
+                $im = RImage::where('id', $i)->first();
                 if($im) {
                         $name = round(microtime(true) * 1000).'.'.$request->file('photos'.$i)->extension();
-                        $request->file('photos'.$i)->move(public_path().'/images/maint/', $name);
-                        DB::table('maintenance_images')
+                        $request->file('photos'.$i)->move(public_path().'/images/repair/', $name);
+                        DB::table('repair_images')
                         ->where('id', $im->id)
                         ->update(
                             ['image' => $name
@@ -148,19 +142,18 @@ class MaintenanceController extends Controller
                 }
             }
         }
-        return redirect()->back()->with('success', 'Maintenance packet updated !');
+        return redirect()->back()->with('success', 'Repair packet updated !');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Maintenance  $maintenance
+     * @param  \App\Repair  $repair
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Maintenance $maintenance)
+    public function destroy(Repair $repair)
     {
-             $maintenance->delete();
-             return redirect()->back();
-        }
-   
+        $repair->delete();
+        return redirect()->back();
+    }
 }
