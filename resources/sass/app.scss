@@ -220,10 +220,17 @@ margin-top: 2%;
     }
     .owl-prev {
       left: -50px;
+      background: transparent url('/assets/images/left.svg') 0% 0% no-repeat padding-box !important;
+      span{
+          display: none;
+      }
     }
     .owl-next {
       right: -50px;
-
+      background: transparent url('/assets/images/right.svg') 0% 0% no-repeat padding-box !important;
+      span{
+        display: none;
+    }
     }
   }
 
@@ -380,4 +387,14 @@ margin-top: 2%;
     }
 }
 
+}
+.news{
+    h1{
+        color: $primaryColor;
+        font-size: 55px;
+        font-weight: 800;
+    }
+    p{
+        color:#7E7E7E;
+    }
 }

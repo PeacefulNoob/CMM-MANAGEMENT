@@ -451,10 +451,20 @@ body {
 
 .blogs_owl .owl-prev {
   left: -50px;
+  background: transparent url("/assets/images/left.svg") 0% 0% no-repeat padding-box !important;
+}
+
+.blogs_owl .owl-prev span {
+  display: none;
 }
 
 .blogs_owl .owl-next {
   right: -50px;
+  background: transparent url("/assets/images/right.svg") 0% 0% no-repeat padding-box !important;
+}
+
+.blogs_owl .owl-next span {
+  display: none;
 }
 
 .form-property {
@@ -626,5 +636,15 @@ body {
 .designs_page .section4 h3 {
   width: 70%;
   padding-bottom: 20px;
+}
+
+.news h1 {
+  color: #1D4C81;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.news p {
+  color: #7E7E7E;
 }
 /*# sourceMappingURL=app.css.map */

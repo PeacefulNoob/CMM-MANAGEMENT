@@ -10,7 +10,7 @@
   padding-top: 2%;
 }
 </style>
-<div class="homeMain">
+<div class="homeMain news">
 
     <div class="paddinglr text-center">
         <h1>Welcome to our blog</h1>
