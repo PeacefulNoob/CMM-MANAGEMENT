@@ -38,7 +38,10 @@ Route::group(
     }
 );
 Route::group(['middleware' => 'can:adman'], function() {
-    Route::get('/home', 'HomeController@index')->name('admin/home');
+    Route::get('/home', 'HomeController@index')->name('admin/home');\
+    Route::get('/all_maintenances','MaintenanceController@index1');
+    Route::get('/all_designs','DesignContoller@index1');
+
 });
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){

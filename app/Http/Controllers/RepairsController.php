@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Repair;
 use Illuminate\Http\Request;
+use Validator;
+use Auth;
+use DB;
+use Gate;
+use App\RImage;
 
 class RepairsController extends Controller
 {

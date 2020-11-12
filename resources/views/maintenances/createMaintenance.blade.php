@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
-<form action="{{ route('designs.store')}}"  method="POST" enctype="multipart/form-data"    class="form-horizontal mb-0">
+<div class="container-fluid">
+<form action="{{ route('maintenances.store')}}"  method="POST" enctype="multipart/form-data"    class="form-horizontal mb-0">
     @csrf
     <div class="form-group">
-      <label for="title">Design</label>
-      <input type="text" class="form-control"  name="title"  placeholder="Enter design packet title">
-      <small id="text" class="form-text text-muted">Enter design packet title</small>
+      <label for="title">Create Maintenance packet</label>
+      <input type="text" class="form-control"  name="title"  placeholder="Enter maintenances packet title">
+      <small id="text" class="form-text text-muted">Enter maintenances packet title</small>
     </div>
     <div class="form-group">
       <label for="description1">Description</label>

@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
+<div class="container-fluid">
 <form action="{{ route('designs.store')}}"  method="POST" enctype="multipart/form-data"    class="form-horizontal mb-0">
     @csrf
     <div class="form-group">
-      <label for="title">Design</label>
+      <label for="title">Create Design packet</label>
       <input type="text" class="form-control"  name="title"  placeholder="Enter design packet title">
       <small id="text" class="form-text text-muted">Enter design packet title</small>
     </div>

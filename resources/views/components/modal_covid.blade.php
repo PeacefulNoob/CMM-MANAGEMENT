@@ -11,7 +11,7 @@
             <div class="covid-body">
                 <h5 class="covid-title"></h5>
                 <p class="covid-text">
-               x
+            
                    </p>
                   
                     @can('admin')

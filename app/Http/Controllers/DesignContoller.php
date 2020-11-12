@@ -26,7 +26,11 @@ class DesignContoller extends Controller
         $designs = Design::all();
         return view('sitePages.designs',compact('designs'));
     }
-
+    public function index1()
+    {
+        $designs = Design::all();
+        return view('admin.all_designs',compact('designs'));
+    }
     /**
      * Show the form for creating a new resource.
      *

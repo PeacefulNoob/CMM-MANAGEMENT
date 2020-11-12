@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Maintenance;
 use Illuminate\Http\Request;
+use Validator;
+use Auth;
+use DB;
+use Gate;
+use App\MImage;
 
 class MaintenanceController extends Controller
 {
@@ -22,7 +27,11 @@ class MaintenanceController extends Controller
         $maintenances = Maintenance::all();
         return view('sitePages.maintenances',compact('maintenances'));
     }
-
+    public function index1()
+    {
+        $maintenances = Maintenance::all();
+        return view('admin.all_maintenances',compact('maintenances'));
+    }
     /**
      * Show the form for creating a new resource.
      *

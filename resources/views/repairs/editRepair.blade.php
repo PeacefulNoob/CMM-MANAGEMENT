@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
+<div class="container-fluid">
 
     <form action="/maintenances/{{ $maintenance->id }}" method="POST" enctype="multipart/form-data">
         @method('PATCH')
         @csrf
         <div class="form-group">
-            <label for="title">maintenance</label>
+            <label for="title">Edit repair packet</label>
             <input type="text" class="form-control" name="title" value="{{ $maintenance->title }}">
         </div>
         <div class="form-group">
