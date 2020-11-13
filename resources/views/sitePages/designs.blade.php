@@ -75,7 +75,7 @@
     <div class="section5 padding">
         <form action="{{ route('contact.store.main') }}" method="POST" class="form-property">
             {{ csrf_field() }}
-               <div class="form-group text-center">
+               <div class="form-group ">
                     <h3> IF YOU ARE INTERESTED IN FURNISHING AND DESIGN OUR SERVICES </h3>
                 </div>
                 <div class="form_inquiry">

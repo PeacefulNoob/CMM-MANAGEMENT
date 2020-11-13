@@ -272,6 +272,7 @@ margin-top: 2%;
 .btnI{
     p{
         font-weight: 100;
+        color: $primaryColor !important;
     }
 }
 .covid-header{
@@ -354,7 +355,10 @@ margin-top: 2%;
 }
 .abouts6{
     color:#1D4C81;
-
+ h6{
+     color: black;
+     font-weight: 600;
+ }
 }
 .designs_page{
     p{
@@ -397,4 +401,30 @@ margin-top: 2%;
     p{
         color:#7E7E7E;
     }
+}
+.buttonBlue{
+    color: white;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.noImage{
+    width:350px ;
+    height: 270px;
+    background-color:#CECECE ;
+    border-radius: 5px;
+}
+.noImageFull{
+    width:350px ;
+    height: 270px;
+    background-color:#CECECE ;
+    border-radius: 5px;
+}
+.abouts7{
+h1,h3{
+    color: $primaryColor;
+    font-weight: 800;
+}
 }

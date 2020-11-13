@@ -36,7 +36,7 @@
                 learn more about the peculiarities of life in this country. Most often, foreigners rent housing at the
                 height of the bathing season. Many prefer to rent real estate in resort areas, houses with sea or
                 mountain views.</p>
-            <button>Check out more</button>
+            <button class="buttonBlue">Check out more</button>
         </div>
         <div class="col-4">
             <h2>CMM Management</h2>
@@ -44,7 +44,7 @@
                 always takes into account the individual needs of customers and provides all services at the highest
                 level. In the hands of reliable and experienced employees, your property in Montenegro will always be
                 appreciated by care and attention. </p>
-            <button>Check out more</button>
+            <button class="buttonBlue">Check out more</button>
         </div>
         <div class="col-4">
             <h2>CMM Sunny Side</h2>
@@ -52,12 +52,53 @@
                 always takes into account the individual needs of customers and provides all services at the highest
                 level. In the hands of reliable and experienced employees, your property in Montenegro will always be
                 appreciated by care and attention.</p>
-            <button>Check out more</button>
+            <button class="buttonBlue">Check out more</button>
         </div>
 
     </div>
-    <div class="row m-0 abouts6 padding justify-content-center">
+    <div class="row m-0 abouts7 padding justify-content-center">
+        <h1 class="col-12">CMM TEAM</h1>
         <div class="col-4">
+          <div class="noImage" src="" alt=""></div>
+            <h3>Anđela Jovanović</h3>
+            <p>Head of Management Department </p>
+        </div>
+        <div class="col-4">
+            <div class="noImage" src="" alt=""></div>
+              <h3>Ivana Vidaković</h3>
+              <p> Management Maintenance Coordinator </p>
+          </div>      
+           <div class="col-4">
+            <div class="noImage" src="" alt=""></div>
+              <h3>Milica Đurović</h3>
+              <p> Account Manager</p>
+          </div>      
+           <div class="col-4">
+            <div class="noImage" src="" alt=""></div>
+              <h3>Danijel Ješovnik</h3>
+              <p>Interior Design Manager</p>
+          </div>     
+            <div class="col-4">
+            <div class="noImage" src="" alt=""></div>
+              <h3>Stefan Vidaković</h3>
+              <p>Service Manager </p>
+          </div>    
+             <div class="col-4">
+            <div class="noImage" src="" alt=""></div>
+              <h3>Vukman Radenović</h3>
+              <p>Management Operative ASsistant</p>
+          </div>
+          <div class="col-12">
+            <div class="noImage" src="" alt=""></div>
+             
+          </div>
+
+
+    </div>
+    <div class="row m-0 abouts6 padding justify-content-center">
+        <h1 class="col-12">Contact us</h1>
+
+        <div class="col-6">
             <h6> Russia:</h6>
             <p>+7 (499) 685 14 96</p>
             <p> +7 (926)
@@ -69,7 +110,7 @@
         </div>
 
 
-        <div class="col-4">
+        <div class="col-6">
             <h6> Montenegro:</h6>
             <p> +382 68 108 896</p>
             <p> +382 33 453 430</p>

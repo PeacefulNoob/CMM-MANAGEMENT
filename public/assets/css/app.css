@@ -508,6 +508,7 @@ body {
 
 .btnI p {
   font-weight: 100;
+  color: #1D4C81;
 }
 
 .covid-header {
@@ -610,6 +611,11 @@ body {
   color: #1D4C81;
 }
 
+.abouts6 h6 {
+  color: black;
+  font-weight: 600;
+}
+
 .designs_page p {
   color: #7E7E7E;
   font-size: 18px;
@@ -646,5 +652,33 @@ body {
 
 .news p {
   color: #7E7E7E;
+}
+
+.buttonBlue {
+  color: white;
+  background-color: #1D4C81;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.noImage {
+  width: 350px;
+  height: 270px;
+  background-color: #CECECE;
+  border-radius: 5px;
+}
+
+.noImageFull {
+  width: 350px;
+  height: 270px;
+  background-color: #CECECE;
+  border-radius: 5px;
+}
+
+.abouts7 h1, .abouts7 h3 {
+  color: #1D4C81;
+  font-weight: 800;
 }
 /*# sourceMappingURL=app.css.map */
