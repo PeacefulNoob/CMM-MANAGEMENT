@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid adminPage">
 
 <form action="/faqs/{{$faq->id}}"  method="POST" enctype="multipart/form-data">
     @method('PATCH')

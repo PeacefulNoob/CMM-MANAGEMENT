@@ -594,8 +594,6 @@ body {
 }
 
 .abouts3 {
-  background-color: #101010;
-  color: white;
 }
 
 .abouts4 {
@@ -664,21 +662,85 @@ body {
 }
 
 .noImage {
-  width: 350px;
-  height: 270px;
+  width: 340px;
+  height: 410px;
   background-color: #CECECE;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .noImageFull {
-  width: 350px;
-  height: 270px;
+  width: 420px;
+  height: 320px;
   background-color: #CECECE;
   border-radius: 5px;
 }
 
-.abouts7 h1, .abouts7 h3 {
+.abouts7 h1, .abouts7 h4 {
   color: #1D4C81;
   font-weight: 800;
+  padding: 20px 5px 10px 5px;
+}
+.lineB{
+  border-top: 2px solid #1D4C81;
+  width: 80%;
+  margin: auto;}
+.bold {
+  font-weight: 600;
+}
+.abouts7 .col-4{
+  text-align: center;
+}
+.abouts7 p{
+color:#7E7E7E;
+}
+.abouts6 h4{
+  font-weight: 600;
+}
+.coronaSection a {
+  color: #1D4C81;
+  font-weight: 600;
+}
+.abouts6  h6{
+  color: black;
+}
+.abouts1 {
+  padding-top: 4% !important;
+  padding-bottom: 0% !important;
+  background-color: #1D4C81;
+  color: white;
+  
+}
+.abouts1 h1{
+color: white;
+    font-size: 52px;
+  
+}
+.cblue{
+  color:#1D4C81;
+  font-weight: 500 !important;
+}
+.abouts2 {
+  color: #1D4C81;
+}
+
+.abouts3 {
+  
+}
+h1{
+  font-size: 52px;
+  color:#1D4C81 ;
+}
+.abouts4 {
+  background-color: #1D4C81;
+  color: white;
+}
+
+.abouts5 {
+  color: #1D4C81;
+}
+
+.abouts6 {
+  color: #1D4C81;
 }
 /*# sourceMappingURL=app.css.map */

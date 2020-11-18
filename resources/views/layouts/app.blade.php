@@ -28,7 +28,6 @@
         </div>
         <div class="py-4 main-content app-content ">
             @include('components.admin_navbar')
-  
             @include('components.alerts')
             @yield('content')
         </div>

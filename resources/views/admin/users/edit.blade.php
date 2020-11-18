@@ -3,7 +3,7 @@
 
 
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid adminPage">
         <div class="card">
         <div class="card-header">Edit user{{$user->name}}</div>
         <div class="card-body">
