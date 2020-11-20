@@ -21,6 +21,7 @@ Route::resource('repairs','RepairsController');
 
 Route::get('/all_news','NewsController@all_news');
 Route::get('/about', 'SiteController@about')->name('about');
+Route::get('/vip', 'SiteController@vip')->name('vip');
 
 
 Auth::routes();

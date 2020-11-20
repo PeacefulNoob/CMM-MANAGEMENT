@@ -21,5 +21,9 @@ class SiteController extends Controller
     {
         return view ('sitePages.about');
     }
-
+    public function vip()
+    {
+        $vips = Vip::all();
+        return view ('sitePages.vip',compact('vips'));
+    }
 }
