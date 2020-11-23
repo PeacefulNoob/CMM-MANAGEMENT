@@ -31,5 +31,60 @@ class AllSeeder extends Seeder
         'user_id' => '1',
 
         ]);
+
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
+        Vip::create([
+            'title' => 'Covid Primjer 1'
+        ]);
     }
 }

@@ -31,7 +31,7 @@
                   </li>
                 
                   <li class="nav-item vipLink">
-                    <a class="nav-link " href="#"><h5>VIP Club</h5></a>
+                    <a class="nav-link " href="/vip"><h5>VIP Club</h5></a>
                   </li>
                 </ul>
               </div>

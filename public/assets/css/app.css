@@ -134,9 +134,7 @@ footer a {
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
-  main {
-    margin-top: 12% !important;
-  }
+
   #section2 {
     margin-top: 0rem !important;
   }
@@ -594,6 +592,8 @@ body {
 }
 
 .abouts3 {
+  background-color: #101010;
+  color: white;
 }
 
 .abouts4 {
@@ -662,20 +662,23 @@ body {
 }
 
 .noImage {
-  width: 340px;
-  height: 410px;
+  width: 350px;
+  height: 270px;
   background-color: #CECECE;
   border-radius: 5px;
-  object-fit: cover;
 }
 
 .noImageFull {
-  width: 420px;
-  height: 320px;
+  width: 350px;
+  height: 270px;
   background-color: #CECECE;
   border-radius: 5px;
 }
 
+.abouts7 h1, .abouts7 h3 {
+  color: #1D4C81;
+  font-weight: 800;
+}
 .abouts7 h1, .abouts7 h4 {
   color: #1D4C81;
   font-weight: 800;
@@ -704,43 +707,14 @@ color:#7E7E7E;
 .abouts6  h6{
   color: black;
 }
-.abouts1 {
-  padding-top: 4% !important;
-  padding-bottom: 0% !important;
-  background-color: #1D4C81;
-  color: white;
-  
+.vip_section1 h1{
+color: #8B783B;
 }
-.abouts1 h1{
-color: white;
-    font-size: 52px;
-  
+.vip_section1 {
+  padding-top: 10%;
 }
-.cblue{
-  color:#1D4C81;
-  font-weight: 500 !important;
-}
-.abouts2 {
-  color: #1D4C81;
-}
+.partners h1{
+  color: #8B783B;
 
-.abouts3 {
-  
-}
-h1{
-  font-size: 52px;
-  color:#1D4C81 ;
-}
-.abouts4 {
-  background-color: #1D4C81;
-  color: white;
-}
-
-.abouts5 {
-  color: #1D4C81;
-}
-
-.abouts6 {
-  color: #1D4C81;
 }
 /*# sourceMappingURL=app.css.map */
