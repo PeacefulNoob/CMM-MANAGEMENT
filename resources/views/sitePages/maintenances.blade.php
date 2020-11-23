@@ -16,7 +16,8 @@
 
     <div class="padding text-center section1">
         <h1>Property Maintenance</h1>
-        <p>Transforming homes into our clients’ dream visions</p>
+        <p>We value your trust! 
+</p>
     </div>
     <div class="row section2 mx-0 padding">
         <div class="col-5 p-0">
@@ -56,6 +57,26 @@
             <h3>Building maintenance</h3>
             <p>Building maintenance refers to all tasks necessary for keeping a building functional and livable. Building maintenance includes a variety of tasks that help create a safe and comfortable work or living environment for a building’s tenants. Ranging from anything inside a building, like cleaning bathrooms and maintaining electrical systems, to anything outside a building, like lawn care and landscaping, routine maintenance services are performed to keep properties in tip-top shape. Represent and protect housing rights and interests of owners of premises for general use residential property; Perform work on the proper content, maintenance and repair of common property in residential house. </p>
     </div>
+    <div class="section6 row mx-0 padding">
+    <h1>Property Maintenance packages:</h1>
+    <div class="row my-5">
+            @forelse ($maintenances as $maintenance)
+            <div class="col-4  p-4">
+                <div class="packet p-4">
+                    <p>Property Maintenance</p>
+                        <h3>{{$maintenance->title}}</h3>
+                    
+                        <div><p>{!!$maintenance->description!!}</p></div>
+                        <a href="/">View all the details</a>
+                </div>
+            </div>
+            @empty
+            <div class="col-sm-12"> NO Maintenances</div>
+    
+            @endforelse
+          
+        </div> 
+        </div> 
     <div class="section5 padding">
         <form action="{{ route('contact.store.main') }}" method="POST" class="form-property">
             {{ csrf_field() }}
@@ -93,39 +114,7 @@
         </form>
     </div>
 
-  {{--       <div class="row my-5">
-            @forelse ($maintenances as $maintenance)
-            <div class="col-sm-5">
-                <h3>{{$maintenance->title}}</h3>
-                @can('admin')
-             <div class="adminButtons"> 
-             <a href="{{ route('maintenance.edit',$maintenance) }}"><button
-                 type="button" class="btn btn-primary">Edit</button></a> 
-     
-                 <form action="{{ route('maintenance.destroy',$maintenance) }}" method="POST"  class="float-left">
-                   @csrf
-                   {{ method_field('DELETE') }}
-                   <button type="submit" class="btn btn-warning">Delete</button>
-               </form>
-           </div>
-             @endcan
-                <div><p>{!!$maintenance->description!!}</p></div>
-            </div>
     
-            <div class="col-sm-7">
-                <div class="row">
-            @foreach ($maintenance->images as $image)
-            <img class="col-6 my-2" src="/images/maintenance/{{$image->image}}" alt="">
-            @endforeach
-             </div>
-             
-            </div>
-            @empty
-            <div class="col-sm-12"> NO Maintenances</div>
-    
-            @endforelse
-          
-        </div> --}}
     </div>
 
 @endsection

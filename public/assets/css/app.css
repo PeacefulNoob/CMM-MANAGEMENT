@@ -4,10 +4,10 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   width: 100%;
-  background-color: #ffffffb5;
+  background-color: #ffffffe0;
 }
 
 .hero-image {
@@ -51,6 +51,7 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: #1D4C81 !important;
+  text-align: center;
 }
 
 .vipLink {
@@ -60,9 +61,27 @@
 }
 
 .vipLink h5 {
-  color: white;
+  color: #ADDBEF;
 }
-
+.section6{
+  background-color: #F8F8F8;
+}
+.section6 h1{
+  color: #1D4C81;
+  font-weight: 800 !important;
+}
+.packet{
+  background-color: #ADDBEF;
+  border-radius: 5px;
+    color: #1D4C81;
+}
+.packet p{
+    color: #1D4C81 !important;
+}
+.packet a{
+  color: #1D4C81 !important;
+  font-weight: 600;
+}
 .nav-item {
   margin: auto;
 }
@@ -557,7 +576,10 @@ body {
 .naslovMain {
   margin-bottom: 8%;
 }
-
+.naslovMain h1{
+  color: #1D4C81;
+font-weight: 800;
+}
 .property {
   margin-top: 3%;
   margin-bottom: 3%;

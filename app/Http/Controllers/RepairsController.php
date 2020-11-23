@@ -81,7 +81,7 @@ class RepairsController extends Controller
    
         }
 
-        return redirect()->back()->with('success', 'Repair packet added');
+        return redirect()->back()->with('success', 'Successfully created repairs packet');
     }
 
     /**
@@ -147,7 +147,7 @@ class RepairsController extends Controller
                 }
             }
         }
-        return redirect()->back()->with('success', 'Repair packet updated !');
+        return redirect()->back()->with('success', 'Successfully updated repairs packet');
     }
 
     /**
@@ -159,6 +159,7 @@ class RepairsController extends Controller
     public function destroy(Repair $repair)
     {
         $repair->delete();
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Successfully deleted repairs packet');
+
     }
 }

@@ -10,7 +10,7 @@
                 @else
 <aside class="app-sidebar sidebar-scroll ps ps--active-y">
     <div class="main-sidebar-header  active"> 
-        <a class="desktop-logo logo-light active" href="index.html">
+        <a class="desktop-logo logo-light active" href="/home">
             <img src="/assets/images/logow.png" class="main-logo" alt="logo"></a> 
            
             </div>
@@ -40,7 +40,7 @@
                     <li><a class="slide-item" href="/all_designs">List of all Design packets      </a></li>
                 </ul>
             </li>
-            <li class="slide"> <a class="side-menu__item" data-toggle="slide" href="#"><span class="side-menu__label dropdown-toggle">Mainenance</span><i class="angle fe fe-chevron-down"></i></a>
+            <li class="slide"> <a class="side-menu__item" data-toggle="slide" href="#"><span class="side-menu__label dropdown-toggle">Maintenance</span><i class="angle fe fe-chevron-down"></i></a>
                 <ul class="slide-menu">
                 <li><a class="slide-item" href="/maintenances/create">Add Maintenance packet</a></li>
                     <li><a class="slide-item" href="/all_maintenances">List of all Maintenance packets      </a></li>

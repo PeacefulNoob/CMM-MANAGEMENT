@@ -90,7 +90,7 @@ class DesignContoller extends Controller
    
         }
 
-        return redirect()->back()->with('success', 'Design packet addded');
+        return redirect()->back()->with('success', 'Successfully created new Design packet');
      
   
     }
@@ -159,7 +159,7 @@ class DesignContoller extends Controller
                 }
             }
         }
-        return redirect()->back()->with('success', 'Design packet updated !');
+        return redirect()->back()->with('success', 'Successfully updated design packet');
     }
 
     /**
@@ -171,6 +171,6 @@ class DesignContoller extends Controller
     public function destroy(Design $design)
     {
         $design->delete();
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Successfully deleted design packet');
     }
 }
