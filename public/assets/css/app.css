@@ -366,7 +366,7 @@ body {
 
 .property-index .owl-next, .property-index .owl-prev {
   width: 40px;
-  height: 71px;
+  height: 40px;
   margin-top: -40px;
   position: absolute;
   top: 50%;
@@ -381,7 +381,13 @@ body {
 .property-index .owl-next {
   right: 10px;
 }
-
+.slikaRepairs{
+position: absolute;
+top: 0;
+right: 0;
+padding: 5px;
+width: auto;
+}
 .property-index .owl-dots {
   position: absolute;
   top: 15%;
@@ -390,12 +396,12 @@ body {
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   border-radius: 15px;
-  padding: 5px 20px;
+  padding: 5px 30px;
 }
 
 .property-index .owl-dots .owl-dot {
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
   background: white !important;
   border-radius: 10px;
   margin: 3px;
@@ -416,7 +422,7 @@ body {
 
 .gallery_single_owl .owl-next, .gallery_single_owl .owl-prev {
   width: 40px;
-  height: 71px;
+  height: 40px;
   margin-top: -40px;
   position: absolute;
   top: 50%;
@@ -458,7 +464,7 @@ body {
 
 .blogs_owl .owl-next, .blogs_owl .owl-prev {
   width: 40px;
-  height: 71px;
+  height: 40px;
   margin-top: -40px;
   position: absolute;
   top: 50%;
@@ -637,8 +643,9 @@ font-weight: 800;
 }
 
 .designs_page p {
-  color: #7E7E7E;
-  font-size: 18px;
+  margin-top: 5px;
+  color: #1D4C81;
+  font-size: 12px;
 }
 
 .designs_page .section1 h1 {
@@ -657,6 +664,7 @@ font-weight: 800;
 .designs_page .section3 {
   color: white;
   background-color: #1D4C81;
+  position: relative;
 }
 
 .designs_page .section4 h3 {

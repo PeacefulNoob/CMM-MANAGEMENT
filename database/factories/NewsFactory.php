@@ -11,5 +11,7 @@ $factory->define(News::class, function (Faker $faker) {
         'description' => $faker->paragraphs(rand(3,7),true),
         'image'=> 'sea.png',
         'user_id' => $faker->numberBetween(1,3),
+        'new_categories_id' => $faker->numberBetween(1,3),
+
     ];
 });

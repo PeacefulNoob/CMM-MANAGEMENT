@@ -35,7 +35,9 @@ class NewsController extends Controller
     public function all_news()
     {
         $news = News::all();
-         return view('sitePages.news',compact('news'));
+        $categories = NewCategories::all();
+
+         return view('sitePages.news',compact('news','categories'));
     }
     /**
      * Show the form for creating a new resource.

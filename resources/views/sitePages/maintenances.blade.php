@@ -39,19 +39,24 @@
             with local suppliers to be able to offer high quality furniture packages at unbeatable prices.</p>
     </div>
   
-    <div class="section3 padding">
+    <div class="section3 ">
+        <div class="padding  "> 
         <h3> Services that we offer: </h3>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled col-6">
             <li> - &nbsp; &nbsp; &nbsp; Payment of utility services </li>
             <li> - &nbsp; &nbsp; &nbsp; Checking the communications </li>
             <li> - &nbsp; &nbsp; &nbsp; Airing real estate </li>
             <li> - &nbsp; &nbsp; &nbsp; Cleaning the property </li>
+        </ul>
+        <ul class="list-unstyled col-6">
             <li> - &nbsp; &nbsp; &nbsp; Airport transfer </li>
             <li> - &nbsp; &nbsp; &nbsp; General cleaning before client`s arrival </li>
             <li> - &nbsp; &nbsp; &nbsp; Photo report</li>
             <li> - &nbsp; &nbsp; &nbsp; Manager assistance</li>
-
         </ul>
+    </div>
+        <img src="/assets/images/maintImage.png" class="slikaRepairs" alt="">
+
     </div>
     <div class="section4 row mx-0 padding">
             <h3>Building maintenance</h3>

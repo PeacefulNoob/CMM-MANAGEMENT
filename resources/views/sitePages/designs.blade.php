@@ -72,6 +72,26 @@
         </div>
 
     </div>
+    <div class="section6 row mx-0 padding">
+        <h1>Furnishing & Design packages:</h1>
+        <div class="row my-5">
+                @forelse ($designs as $designs)
+                <div class="col-4  p-4">
+                    <div class="packet p-4">
+                        <p>Furnishing & Design</p>
+                            <h3>{{$designs->title}}</h3>
+                        
+                            <div><p>{!!$designs->description!!}</p></div>
+                            <a href="/">View all the details</a>
+                    </div>
+                </div>
+                @empty
+                <div class="col-sm-12"> NO designs</div>
+        
+                @endforelse
+              
+            </div> 
+            </div> 
     <div class="section5 padding">
         <form action="{{ route('contact.store.main') }}" method="POST" class="form-property">
             {{ csrf_field() }}

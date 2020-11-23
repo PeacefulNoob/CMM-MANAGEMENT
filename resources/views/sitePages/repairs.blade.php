@@ -24,31 +24,32 @@
             <p>Even though the real estate is brand new, or old one, there is always need to renovate and repair something. Home renovation can increase the value of your home for sale or simply make your home more comfortable to live in now.</p>
         </div>
         <div class="col-7 pb-4 pl-4 pr-0">
-            <img src="/assets/images/propertyM.png" alt="">
+            <img src="/assets/images/renovationR.png" alt="">
         </div>
 
-        <p>Being in the business for many years, we have the experience to know what standards will meet your
-            expectations. We aim to reduce the expense and relieve the stress of furnishing a property. We work closely
-            with local suppliers to be able to offer high quality furniture packages at unbeatable prices.</p>
+      
     </div>
   
-    <div class="section3 padding">
-        <h3> Services that we offer: </h3>
-        <ul class="list-unstyled">
-            <li> - &nbsp; &nbsp; &nbsp; Payment of utility services </li>
-            <li> - &nbsp; &nbsp; &nbsp; Checking the communications </li>
-            <li> - &nbsp; &nbsp; &nbsp; Airing real estate </li>
-            <li> - &nbsp; &nbsp; &nbsp; Cleaning the property </li>
-            <li> - &nbsp; &nbsp; &nbsp; Airport transfer </li>
-            <li> - &nbsp; &nbsp; &nbsp; General cleaning before client`s arrival </li>
-            <li> - &nbsp; &nbsp; &nbsp; Photo report</li>
-            <li> - &nbsp; &nbsp; &nbsp; Manager assistance</li>
+    <div class="section3 ">
+        <div class="padding  "> 
+            <h3 class=""> Services that we offer: </h3>
+            <ul class="list-unstyled ">
+                <li> - &nbsp; &nbsp; &nbsp; Payment of utility services </li>
+                <li> - &nbsp; &nbsp; &nbsp; Checking the communications </li>
+                <li> - &nbsp; &nbsp; &nbsp; Airing real estate </li>
+                <li> - &nbsp; &nbsp; &nbsp; Cleaning the property </li>
+                <li> - &nbsp; &nbsp; &nbsp; Airport transfer </li>
+                <li> - &nbsp; &nbsp; &nbsp; General cleaning before client`s arrival </li>
+                <li> - &nbsp; &nbsp; &nbsp; Photo report</li>
+                <li> - &nbsp; &nbsp; &nbsp; Manager assistance</li>
 
-        </ul>
+            </ul>
+    </div>
+    <img src="/assets/images/repairsImage.png" class="slikaRepairs" alt="">
+
     </div>
     <div class="section4 row mx-0 padding">
-            <h3>Building maintenance</h3>
-            <p>Building maintenance refers to all tasks necessary for keeping a building functional and livable. Building maintenance includes a variety of tasks that help create a safe and comfortable work or living environment for a building’s tenants. Ranging from anything inside a building, like cleaning bathrooms and maintaining electrical systems, to anything outside a building, like lawn care and landscaping, routine maintenance services are performed to keep properties in tip-top shape. Represent and protect housing rights and interests of owners of premises for general use residential property; Perform work on the proper content, maintenance and repair of common property in residential house. </p>
+          <img src="/assets/images/repairsImage.png" alt="">
     </div>
     <div class="section5 padding">
         <form action="{{ route('contact.store.main') }}" method="POST" class="form-property">

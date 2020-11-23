@@ -7,6 +7,7 @@ use App\PropertyType;
 use App\Location;
 use App\Repair;
 use App\Covid;
+use App\Vip;
 
 
 class AllSeeder extends Seeder
