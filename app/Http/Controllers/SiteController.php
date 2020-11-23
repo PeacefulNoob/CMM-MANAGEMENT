@@ -26,4 +26,10 @@ class SiteController extends Controller
         $vips = Vip::all();
         return view ('sitePages.vip',compact('vips'));
     }
+    public function single_news($id)
+    {
+        $blog = News::find($id);
+        $blogs = News::all();
+        return view ('sitePages.single_news',compact('blog','blogs'));
+    }
 }

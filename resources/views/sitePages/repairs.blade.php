@@ -21,13 +21,7 @@
     <div class="row section2 mx-0 padding">
         <div class="col-5 p-0">
             <h3>What does it mean?</h3>
-            <p>Buying real estate in Montenegro with the help of the CMM team is a great choice. Now it is our job to
-                furnish your apartment and to create interiors that are a true reflection of you. We focus on designing
-                spaces that represent your personal style and functionality needs, paired with our unique and timeless
-                design concepts. </p>
-            <p> Our goal is to guide you through this process in an easy way, as the CMM team is
-                skilled in handling all aspects of a design job, including project management, budget review, and
-                collaborating with the best furniture salons. Together, we can create the home of your dreams.</p>
+            <p>Even though the real estate is brand new, or old one, there is always need to renovate and repair something. Home renovation can increase the value of your home for sale or simply make your home more comfortable to live in now.</p>
         </div>
         <div class="col-7 pb-4 pl-4 pr-0">
             <img src="/assets/images/propertyM.png" alt="">

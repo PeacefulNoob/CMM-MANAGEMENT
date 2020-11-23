@@ -16,7 +16,7 @@
 
     <div class="padding text-center section1">
         <h1>Furnishing & Design</h1>
-        <p>Transforming homes into our clients’ dream visions</p>
+        <p>You only need to define the stile you like and we will do the rest for you!</p>
     </div>
     <div class="row section2 mx-0 padding">
         <div class="col-5 p-0">
