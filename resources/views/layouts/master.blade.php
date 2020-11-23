@@ -7,7 +7,24 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>CMM | Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CMM Management website. ">
+    <meta name="keywords" content="real estate,apartments,apartment,house,summer,crna gora,montenegro,enjoy,winter,top,luxury,afordable,reasonable,kotor,sea,house,lovely">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="PeacefulNoob">  
+
+    <meta property="og:image" content="https://cmm-management.com/assets/images/logo1.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cmm-management.com/" />
+    <meta property="og:title" content="CMM | Management" />
+    <meta property="og:description" content="CMM | Management website" />
+  
+    <link rel="icon" type="image/png" href="/images/Bar-ikonica.png" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logo1.png" type="image/png" sizes="152x152" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logo1.png" type="image/png" sizes="120x120" />
+    <link rel="apple-touch-icon" href="/assets/images/logo1.png" sizes="180x180" />
+    
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
