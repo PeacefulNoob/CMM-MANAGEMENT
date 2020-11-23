@@ -72,7 +72,7 @@ class NewsController extends Controller
         $post->save();
 
 
-        return redirect()->back()->with('success', 'News post addded');
+        return redirect()->back()->with('success', 'Successfully created news post');
      
   
     }
@@ -124,7 +124,7 @@ class NewsController extends Controller
             'description' => $request->description,
         ]);
         
-        return redirect()->back()->with('success', 'News post '.$news->title.'  updated !');
+        return redirect()->back()->with('success', 'Successfully updated news post '.$news->title.'.');
     }
 
     /**
@@ -139,7 +139,7 @@ class NewsController extends Controller
             return redirect(route('admin.users.index'));
         } */
             $news->delete();
-            return redirect()->back()->with('success', 'News post '.$news->title.' deleted.');
+            return redirect()->back()->with('success', 'Successfully deleted news post '.$news->title.'.');
         
     
     }

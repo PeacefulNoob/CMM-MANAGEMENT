@@ -69,7 +69,7 @@ class FaqController extends Controller
         $faq->save();
 
 
-        return redirect()->back()->with('success', 'Faq uspesno dodat');
+        return redirect()->back()->with('success', 'Successfully created new FaQ');
 
     }
 
@@ -123,7 +123,7 @@ class FaqController extends Controller
             'question' => $request->question,
         ]);
         
-        return redirect()->back()->with('success', 'Faq uspesno azuriran');
+        return redirect()->back()->with('success', 'Successfully updated FaQ');
     }
 
     /**
@@ -138,7 +138,7 @@ class FaqController extends Controller
             return redirect(route('admin.users.index'));
         }
             $faq->delete();
-            return redirect()->back()->with('success', 'Faq uspesno obrisan');
+            return redirect()->back()->with('success', 'Successfully deleted FaQ');
         
     }
 }

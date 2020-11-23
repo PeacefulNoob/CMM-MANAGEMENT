@@ -90,7 +90,7 @@ class MaintenanceController extends Controller
    
         }
 
-        return redirect()->back()->with('success', 'Maintenance packet added');
+        return redirect()->back()->with('success', 'Successfully created new Maintenance packet');
     }
 
     /**
@@ -157,7 +157,7 @@ class MaintenanceController extends Controller
                 }
             }
         }
-        return redirect()->back()->with('success', 'Maintenance packet updated !');
+        return redirect()->back()->with('success', 'Successfully updated maintenance packet');
     }
 
     /**
@@ -169,7 +169,7 @@ class MaintenanceController extends Controller
     public function destroy(Maintenance $maintenance)
     {
              $maintenance->delete();
-             return redirect()->back();
-        }
+             return redirect()->back()->with('success', 'Successfully deleted maintenance packet');
+            }
    
 }

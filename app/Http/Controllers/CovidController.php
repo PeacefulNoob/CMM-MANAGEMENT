@@ -96,7 +96,7 @@ class CovidController extends Controller
             'description' => $request->description,
         ]);
         
-        return redirect()->back()->with('success', 'Covid section updated !');
+        return redirect()->back()->with('success', 'Covid information updated ');
     }
 
     /**
