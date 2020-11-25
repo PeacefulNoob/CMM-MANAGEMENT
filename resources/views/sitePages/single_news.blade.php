@@ -8,7 +8,7 @@
 <div class="homeMain">
     <div class="paddinglr single_news_section my-5">
            <div class="single_news_header pb-3">
-                <img class="" src="/{{ $blog->image }}" alt="Card image cap">
+                <img class="" src="/{{ $blog->image }}" class="blogMainImage" alt="Card image cap">
            </div>
            <div class="single_news_title pb-1 pt-2">
                  <h2>{{ $blog->title }}</h2>
