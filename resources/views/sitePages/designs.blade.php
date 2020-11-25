@@ -38,7 +38,9 @@
             with local suppliers to be able to offer high quality furniture packages at unbeatable prices.</p>
     </div>
 
-    <div class="section3 padding">
+    <div class="section3 ">
+    <div class="padding  "> 
+
         <h3> CMM Furniture and Interior design department can provide a
             variety of services for you:</h3>
         <ul class="list-unstyled">
@@ -50,6 +52,8 @@
             <li> - &nbsp; &nbsp; &nbsp; Minor repairs </li>
             <li> - &nbsp; &nbsp; &nbsp; Complete renovation of the apartment</li>
         </ul>
+    </div>   
+         <img src="/assets/images/repairsImage.png" class="slikaRepairs" alt="">
     </div>
     <div class="section4 row mx-0 padding">
         <div class="col-6 pt-3 pl-0">

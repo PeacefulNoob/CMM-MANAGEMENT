@@ -22,7 +22,18 @@
   background-size: cover;
   position: relative;
 }
-
+.section6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("/assets/images/furnishingCover.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/images/furnishingCover.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.section6 h1{
+  font-size: 50px;
+}
 .hero-text {
   text-align: center;
   position: absolute;
@@ -72,6 +83,7 @@
 .section6 h1{
   color: #1D4C81;
   font-weight: 800 !important;
+  margin-top: 4%;
 }
 .packet{
   background-color: #ADDBEF;
@@ -385,6 +397,7 @@ body {
   right: 10px;
 }
 .slikaRepairs{
+height: 100%;
 position: absolute;
 top: 0;
 right: 0;
@@ -587,7 +600,8 @@ width: auto;
 }
 .naslovMain h1{
   color: #1D4C81;
-font-weight: 800;
+  font-size: 50px;
+  font-weight: 800;
 }
 .property {
   margin-top: 3%;
@@ -648,7 +662,7 @@ font-weight: 800;
 .designs_page p {
   margin-top: 5px;
   color: #1D4C81;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .designs_page .section1 h1 {
@@ -669,7 +683,9 @@ font-weight: 800;
   background-color: #1D4C81;
   position: relative;
 }
-
+.designs_page .section3 li{
+    font-size:16px;
+}
 .designs_page .section4 h3 {
   width: 70%;
   padding-bottom: 20px;

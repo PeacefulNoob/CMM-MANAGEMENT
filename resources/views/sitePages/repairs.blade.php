@@ -49,7 +49,7 @@
 
     </div>
     <div class="section4 row mx-0 padding">
-          <img src="/assets/images/repairsImage.png" alt="">
+          <img src="/assets/images/furnishingCover.png" alt="">
     </div>
     <div class="section5 padding">
         <form action="{{ route('contact.store.main') }}" method="POST" class="form-property">
