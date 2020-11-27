@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <div class="d-flex">
-                        <div > <p class="bold"> Adress :</p></div>
+                        <div > <p class="bold pr-1"> Adress :</p></div>
                         <div>
                             <p>Adress 1, Budva, Montenegro</p>
                             <p> Adress 2, Moskow, Russia</p>
@@ -39,14 +39,14 @@
                 </li>
                 <li>
                     <div class="d-flex">
-                        <div><p class="bold"> Telefon:</p></div>
-                        <div>+382 00 000 000</div>
+                        <div><p class="bold pr-1"> Telefon:</p></div>
+                        <div>  <p>+382 00 000 000</p></div>
                     </div>
                 </li>
                 <li>
                     <div class="d-flex">
-                        <div><p class="bold"> Email adresa:</p></div>
-                        <div>email@cmm.me</div>
+                        <div><p class="bold pr-1"> Email adresa:</p></div>
+                        <div>  <p>email@cmm.me</p></div>
                     </div>
                 </li>
             

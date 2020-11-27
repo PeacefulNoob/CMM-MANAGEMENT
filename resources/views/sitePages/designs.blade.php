@@ -79,21 +79,60 @@
     <div class="section6 row mx-0 padding">
         <h1>Furnishing & Design packages:</h1>
         <div class="row my-5">
-                @forelse ($designs as $designs)
                 <div class="col-4  p-4">
-                    <div class="packet p-4">
-                        <p>Furnishing & Design</p>
-                            <h3>{{$designs->title}}</h3>
-                        
-                            <div><p>{!!$designs->description!!}</p></div>
-                            <a href="/">View all the details</a>
-                    </div>
+                <div class="packet p-4">
+                    <p>Furnishing & Design</p>
+                        <h3>Investment rental </h3>
+                    
+                        <div><ul>
+                            <li> Lorem ipsum dolor sit </li>
+                            <li> amet Ex veri liberavisse duo.</li>
+                            <li>  Vivendo qualisque voluptatum </li>
+                            <li>   duo His omittam accusata at. </li>
+                            <li>   Veri primis eum an Eu eos tota </li>
+                            <li>  aliquip molestie, duo vide minimum </li>
+                            <li>  efficiantur an. Ad mucius pertinacia</li>
+                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
+                            </ul></div>
+                        <a href="/">View all the details</a>
                 </div>
-                @empty
-                <div class="col-sm-12"> NO designs</div>
-        
-                @endforelse
-              
+            </div>
+            <div class="col-4  p-4">
+                <div class="packet p-4">
+                    <p>Furnishing & Design</p>
+                        <h3>Family residential</h3>
+                    
+                        <div><ul>
+                            <li> Lorem ipsum dolor sit </li>
+                            <li> amet Ex veri liberavisse duo.</li>
+                            <li>  Vivendo qualisque voluptatum </li>
+                            <li>   duo His omittam accusata at. </li>
+                            <li>   Veri primis eum an Eu eos tota </li>
+                            <li>  aliquip molestie, duo vide minimum </li>
+                            <li>  efficiantur an. Ad mucius pertinacia</li>
+                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
+                            </ul></div>
+                        <a href="/">View all the details</a>
+                </div>
+            </div>
+            <div class="col-4  p-4">
+                <div class="packet p-4">
+                    <p>Furnishing & Design</p>
+                        <h3>Feel like a king</h3>
+                    
+                        <div><ul>
+                            <li> Lorem ipsum dolor sit </li>
+                            <li> amet Ex veri liberavisse duo.</li>
+                            <li>  Vivendo qualisque voluptatum </li>
+                            <li>   duo His omittam accusata at. </li>
+                            <li>   Veri primis eum an Eu eos tota </li>
+                            <li>  aliquip molestie, duo vide minimum </li>
+                            <li>  efficiantur an. Ad mucius pertinacia</li>
+                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
+                            </ul></div>
+                        <a href="/">View all the details</a>
+                </div>
+            </div>
             </div> 
             </div> 
     <div class="section5 padding">

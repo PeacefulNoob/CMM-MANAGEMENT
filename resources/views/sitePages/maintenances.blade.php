@@ -65,21 +65,42 @@
     <div class="section6 row mx-0 padding">
     <h1>Property Maintenance packages:</h1>
     <div class="row my-5">
-            @forelse ($maintenances as $maintenance)
             <div class="col-4  p-4">
                 <div class="packet p-4">
                     <p>Property Maintenance</p>
-                        <h3>{{$maintenance->title}}</h3>
+                        <h3>Interior maintenance</h3>
                     
-                        <div><p>{!!$maintenance->description!!}</p></div>
+                        <div><ul>
+                            <li> Lorem ipsum dolor sit </li>
+                            <li> amet Ex veri liberavisse duo.</li>
+                            <li>  Vivendo qualisque voluptatum </li>
+                            <li>   duo His omittam accusata at. </li>
+                            <li>   Veri primis eum an Eu eos tota </li>
+                            <li>  aliquip molestie, duo vide minimum </li>
+                            <li>  efficiantur an. Ad mucius pertinacia</li>
+                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
+                            </ul></div>
                         <a href="/">View all the details</a>
                 </div>
             </div>
-            @empty
-            <div class="col-sm-12"> NO Maintenances</div>
-    
-            @endforelse
-          
+            <div class="col-4  p-4">
+                <div class="packet p-4">
+                    <p>Property Maintenance</p>
+                        <h3>Exterior maintenance</h3>
+                    
+                        <div><ul>
+                            <li> Lorem ipsum dolor sit </li>
+                            <li> amet Ex veri liberavisse duo.</li>
+                            <li>  Vivendo qualisque voluptatum </li>
+                            <li>   duo His omittam accusata at. </li>
+                            <li>   Veri primis eum an Eu eos tota </li>
+                            <li>  aliquip molestie, duo vide minimum </li>
+                            <li>  efficiantur an. Ad mucius pertinacia</li>
+                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
+                            </ul></div>
+                        <a href="/">View all the details</a>
+                </div>
+            </div>
         </div> 
         </div> 
     <div class="section5 padding">

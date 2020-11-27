@@ -25,7 +25,7 @@
                 @foreach($blogs as $blog)
                     <div class="card" style="border:none">
                     <a href="/single_news/{{$blog->id}}">
-                        <img class="card-img-top" src="/{{ $blog->image }}" alt="Card image cap">
+                        <img class="card-img-top blog_image" src="/{{ $blog->image }}" alt="Card image cap">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">{{ $blog->title }}</h5>

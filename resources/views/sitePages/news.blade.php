@@ -22,7 +22,7 @@
                     <div class="card col-3 my-5" style="border:none">
                     <a href="/single_news/{{$new->id}}">
  
-                    <img class="card-img-top" src="{{ $new->image }}" alt="Card image cap">
+                    <img class="card-img-top blog_image" src="{{ $new->image }}" alt="Card image cap">
                     </a>
 
                         <div class="card-body">

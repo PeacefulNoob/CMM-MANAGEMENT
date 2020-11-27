@@ -3,25 +3,26 @@
 <div class="homeMain">
     <div class="abouts1 padding row m-0">
         <div class="col-6 pt-5">
-        <h1 class="pb-2">About us</h1>
-        <p class="pb-2">CMM Investment Consulting Group is a unique Montenegrin company which provides a full spectrum of services,
-            from creation of the ideas and concepts of the property, to its construction and implementation in 15 years
-            of its work.</p>
-        <p> The company was founded by the merger of the group of companies with the most experienced professionals in
-            the real estate market, tourism and investment consulting in Montenegro. Today the company specializes in
-            the sale, purchase and rental of real estate in Montenegro; tourism and large spectrum of services in these
-            areas, and also investment consulting. Having a great experience, we now sell our own developments.</p>
+            <h1 class="pb-2">About us</h1>
+            <p class="pb-2">CMM Investment Consulting Group is a unique Montenegrin company which provides a full spectrum of services,
+                from creation of the ideas and concepts of the property, to its construction and implementation in 15 years
+                of its work.</p>
+            <p> The company was founded by the merger of the group of companies with the most experienced professionals in
+                the real estate market, tourism and investment consulting in Montenegro. Today the company specializes in
+                the sale, purchase and rental of real estate in Montenegro; tourism and large spectrum of services in these
+                areas, and also investment consulting. Having a great experience, we now sell our own developments.</p>
+                </div>
+                <div class="col-6">
             </div>
-            <div class="col-6">
-                <img src="/assets/images/about/Office copy.png" alt="">
-</div>
+            <img src="/assets/images/about/Office copy.png" alt="">
+
         </div>
     <div class="abouts2 padding cblue">
         <p class= "py-2">The main priority of the CMM Company is deeper understanding of the client's needs and preferences which,
             together with their extensive investment experience and international recognition allows the client to feel
             secure and confident to purchase through CMM Group. </p>
         <p>CMM's rapid growth has seen the company expend to the following international markets:</p>
-        <img  src="/assets/images/about/Component 14 – 1.png" alt="">
+        <img  src="/assets/images/about/Component 14 1.png" alt="">
     </div>
     <div class="abouts3 padding">
         <h1>Our awards</h1>
