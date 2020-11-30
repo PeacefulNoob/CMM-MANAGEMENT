@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <div class="d-flex">
-                        <div > <p class="bold pr-1"> Adress :</p></div>
+                        <div > <p class="bold pr-1"> Adress:</p></div>
                         <div>
                             <p>Adress 1, Budva, Montenegro</p>
                             <p> Adress 2, Moskow, Russia</p>

@@ -19,7 +19,7 @@ Route::resource('news','NewsController');
 Route::resource('maintenances','MaintenanceController');
 Route::resource('repairs','RepairsController');
 
-Route::get('/all_news','NewsController@all_news');
+Route::get('/all_news/{id}','NewsController@all_news');
 Route::get('/about', 'SiteController@about')->name('about');
 Route::get('/vip', 'SiteController@vip')->name('vip');
 Route::get('/single_news/{id}', 'SiteController@single_news')->name('single_news');
@@ -51,7 +51,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
 });
 Route::get('/', 'SiteController@index')->name('home');
 
-Route::post('Design', [
-    'uses' => 'EmailController@design',
+Route::post('Inquiry', [
+    'uses' => 'EmailController@exc',
     'as' => 'contact.store.main'
 ]);

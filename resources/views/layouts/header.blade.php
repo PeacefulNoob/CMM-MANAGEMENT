@@ -21,13 +21,13 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item ">
-                    <a class="nav-link" href="/all_news"><h5>News</h5></a>
+                    <a class="nav-link" href="/all_news/0"><h5>News</h5></a>
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="/about"><h5>About us </h5></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><h5>Contact us</h5></a>
+                  <a class="nav-link" href="/about#about_contact"><h5>Contact us</h5></a>
                   </li>
                 
                   <li class="nav-item vipLink">

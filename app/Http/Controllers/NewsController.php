@@ -32,11 +32,14 @@ class NewsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function all_news()
+    public function all_news($id)
     {
-        $news = News::all();
+        if ($id == 0 ) {
+            $news = News::all();
+        }else{
+            $news = News::where('new_categories_id',$id)->get();
+        }
         $categories = NewCategories::all();
-
          return view('sitePages.news',compact('news','categories'));
     }
     /**

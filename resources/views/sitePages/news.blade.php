@@ -15,6 +15,11 @@
     <div class="paddinglr text-center">
         <h1>Welcome to our blog</h1>
         <p>A short description of the purpose of the blog goes here.</p>
+        <p> 
+        @foreach($categories as $category)
+       <a href="/all_news/{{$category->id}}">{{$category->title}}</a>  &nbsp/&nbsp
+        @endforeach
+        </p>
     </div>
 
         <div class="paddinglr blogs_main row">

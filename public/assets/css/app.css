@@ -112,7 +112,6 @@
 .nav-link h5 {
   margin: 0;
 }
-
 footer {
   padding-top: 1%;
   background: #1D4C81;
@@ -121,8 +120,12 @@ footer {
   font-weight: 300;
 }
 
-footer h2 {
+footer h4 {
   font-weight: 300;
+}
+
+footer li {
+  padding: 4px;
 }
 
 .footer1 {
@@ -144,6 +147,7 @@ footer a {
   margin-left: 2%;
   margin-right: auto;
 }
+
 
 .footer2 {
   border-top: 1px solid #fff;
@@ -431,7 +435,7 @@ width: auto;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   border-radius: 15px;
-  padding: 5px 30px;
+  padding: 5px 30px 10px 30px;
 }
 
 .property-index .owl-dots .owl-dot {

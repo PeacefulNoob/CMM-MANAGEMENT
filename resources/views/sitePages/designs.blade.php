@@ -79,7 +79,7 @@
     <div class="section6 row mx-0 padding">
         <h1>Furnishing & Design packages:</h1>
         <div class="row my-5">
-                <div class="col-4  p-4">
+                <div class="col-4  ">
                 <div class="packet p-4">
                     <p>Furnishing & Design</p>
                         <h3>Investment rental </h3>
@@ -97,7 +97,7 @@
                         <a href="/">View all the details</a>
                 </div>
             </div>
-            <div class="col-4  p-4">
+            <div class="col-4 ">
                 <div class="packet p-4">
                     <p>Furnishing & Design</p>
                         <h3>Family residential</h3>
@@ -115,7 +115,7 @@
                         <a href="/">View all the details</a>
                 </div>
             </div>
-            <div class="col-4  p-4">
+            <div class="col-4 ">
                 <div class="packet p-4">
                     <p>Furnishing & Design</p>
                         <h3>Feel like a king</h3>
@@ -136,29 +136,38 @@
             </div> 
             </div> 
     <div class="section5 padding">
-        <form action="{{ route('contact.store.main') }}" method="POST" class="form-property">
+    <form action="{{ route('contact.store.main') }}" method="POST" class="form-property needs-validation">
             {{ csrf_field() }}
-               <div class="form-group ">
-                    <h3> IF YOU ARE INTERESTED IN FURNISHING AND DESIGN OUR SERVICES </h3>
+            <input type="hidden" class="form-control" name="title" id="title" value="Furnishing & Design">
+
+               <div class="form-group">
+                    <h3> IF YOU ARE INTERESTED IN Furnishing & Design </h3>
                 </div>
                 <div class="form_inquiry">
                     <div class="form-row m-0">
                         <div class="form-group col-md-6 form_inquiry_left">
                             <label for="name">WHAT IS YOUR NAME</label>
                             <input type="text" class="form-control" name="name" id="name"
-                                placeholder="Put the name and surname please ">
+                                placeholder="Put the name and surname please " required>
+                                <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                         </div>
                         <div class="form-group col-md-6 form_inquiry_right ">
                             <label for="email">WHAT IS YOUR E-MAIL ADRESS?</label>
-                            <input type="text" class="form-control" name="email" id="email"
-                                placeholder="Put your e-mail adress please">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Put your e-mail adress please" required>
+                                <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                         </div>
                     </div>
                         <div class="form-group  form_inquiry_bot ">
                             <label for="message">MESSAGE</label>
-                     
-                     <textarea class="form-control" name="message" id="message" cols="30" rows="7">What may we help you with?</textarea>
-                         
+                            <textarea class="form-control" name="message" id="message" cols="30" rows="7" required>What may we help you with?</textarea>
+                            <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                         
                     </div>
                 </div>

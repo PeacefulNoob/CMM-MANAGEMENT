@@ -55,13 +55,13 @@
             <div class="row m-0 ">
                 <div class="col-12   text-center naslovMain">
                     <h1>Furnishing & Design</h1>
-                   <p>You only need to define the stile you like and we will do the rest for you!</p>
+                   <p></p>
                 </div>
                 <div class="col-7">
                     <img src="/assets/images/garden.png" alt="">
                 </div>
                 <div class="col-4 ml-auto">
-                    <h3>What does it mean?</h3>
+                    <h3>You only need to define the stile you like and we will do the rest for you!</h3>
                     <p>Buying real estate in Montenegro with the help of the CMM team is a great choice and just the first step. Now it is our job to furnish your real estate and to create interiors that are a true reflection of you. We focus on designing spaces that represent your personal style and functionality needs, paired with our unique and timeless design concepts. Our goal is to guide you through this process lightly, as the CMM team is skilled in handling all aspects of a designing, including project management, budget review, and collaborating with the best furniture salons. Together, we can create the home of your dreams.</p>
                     <a href="/designs">Read more</a>
                 </div>
@@ -71,13 +71,13 @@
             <div class="row m-0 ">
                 <div class="col-12  text-center naslovMain">
                     <h1>Property Maintenance</h1>
-                   <p>We value your trust! </p>
+                   <p> </p>
                 </div>
                 <div class="col-7">
                     <img src="/assets/images/propertyM.png" alt="">
                 </div>
                 <div class="col-4 ml-auto">
-                    <h3>What does it mean?</h3>
+                    <h3>We value your trust!</h3>
                     <p>Performing regular maintenance on your home or property is a vital part of maintaining your investment and ensuring it becomes an asset to you rather than a liability. Repairs or replacement of many common household items will eventually be required, however, with a little planning and foresight, doing regular maintenance will go a long way to saving you money and reducing your level of stress. </p>
                     <a href="/maintenances">Read more</a>
                 </div>
@@ -86,13 +86,13 @@
             <div class="row m-0 ">
                 <div class="col-12  text-center naslovMain">
                     <h1>Renovations & Repairs</h1>
-                   <p>Renovating not only restores the house, but restores the story of the home </p>
+                   <p> </p>
                 </div>
                 <div class="col-7">
                     <img src="/assets/images/renovationR.png" alt="">
                 </div>
                 <div class="col-4 ml-auto">
-                    <h3>What does it mean?</h3>
+                    <h3>Renovating not only restores the house, but restores the story of the home</h3>
                     <p>Lorem ipsum dolor sit amet, ex veri liberavisse duo. Vivendo qualisque voluptatum duo id. His
                         omittam accusata at. Veri primis eum an, eu eos tota aliquip molestie, duo vide minimum
                         efficiantur an. Ad mucius pertinacia incorrupte duo, alienum repudiare eu sed. Has ea quis
