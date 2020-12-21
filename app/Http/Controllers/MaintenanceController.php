@@ -9,6 +9,7 @@ use Auth;
 use DB;
 use Gate;
 use App\MImage;
+use App\News;
 
 class MaintenanceController extends Controller
 {
@@ -24,8 +25,10 @@ class MaintenanceController extends Controller
      */
     public function index()
     {
+        $blogs = News::all();
+
         $maintenances = Maintenance::all();
-        return view('sitePages.maintenances',compact('maintenances'));
+        return view('sitePages.maintenances',compact('maintenances','blogs'));
     }
     public function index1()
     {

@@ -80,20 +80,11 @@
                 <li>
                     <h4>LAST BLOGS</h4>
                 </li>
+                @foreach($blogs as $blog)
                 <li>
-                    <a target="_blank" href="#">Blogpost 1</a>
+                    <a target="_blank" href="/single_news/{{$blog->id}}">{{$blog->title}}</a>
                 </li>
-                <li>
-                    <a target="_blank" href="#">Blogpost 1</a>
-                </li>    <li>
-                    <a target="_blank" href="#">Blogpost 1</a>
-                </li>    <li>
-                    <a target="_blank" href="#">Blogpost 1</a>
-                </li>    <li>
-                    <a target="_blank" href="#">Blogpost 1</a>
-                </li>    <li>
-                    <a target="_blank" href="#">Blogpost 1</a>
-                </li>
+                @endforeach
 
             </ul>
         </div>

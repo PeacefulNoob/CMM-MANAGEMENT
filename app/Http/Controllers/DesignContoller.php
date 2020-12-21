@@ -9,6 +9,7 @@ use Auth;
 use DB;
 use Gate;
 use Illuminate\Http\Request;
+use App\News;
 
 class DesignContoller extends Controller
 {
@@ -23,8 +24,10 @@ class DesignContoller extends Controller
      */
     public function index()
     {
+        $blogs = News::all();
+
         $designs = Design::all();
-        return view('sitePages.designs',compact('designs'));
+        return view('sitePages.designs',compact('designs','blogs'));
     }
     public function index1()
     {

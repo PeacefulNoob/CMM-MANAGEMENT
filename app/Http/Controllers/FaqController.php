@@ -8,6 +8,7 @@ use Validator;
 use Auth;
 use DB;
 use Gate;
+use App\News;
 
 class FaqController extends Controller
 {
@@ -22,8 +23,10 @@ class FaqController extends Controller
      */
     public function index()
     {
+        $blogs = News::all();
+
         $faqs= Faq::all();
-        return view ('sitePages.Faq',compact('faqs'));
+        return view ('sitePages.Faq',compact('faqs','blogs'));
 
     }
 

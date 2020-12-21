@@ -16,6 +16,7 @@ class CreateVipsTable extends Migration
         Schema::create('vips', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->text('address');
             $table->timestamps();
         });
     }

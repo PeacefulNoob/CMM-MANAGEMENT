@@ -19,11 +19,11 @@
         <p>Transforming homes into our clients’ dream visions</p>
     </div>
     <div class="row section2 mx-0 padding">
-        <div class="col-5 p-0">
-            <h3>What does it mean?</h3>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-12 p-0">
+            <h3>Transforming homes into our clients’ dream visions</h3>
             <p>Even though the real estate is brand new, or old one, there is always need to renovate and repair something. Home renovation can increase the value of your home for sale or simply make your home more comfortable to live in now.</p>
         </div>
-        <div class="col-7 pb-4 pl-4 pr-0">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-12 slikaDRM mb-4 pl-4 pr-0">
             <img src="/assets/images/renovationR.png" alt="">
         </div>
 

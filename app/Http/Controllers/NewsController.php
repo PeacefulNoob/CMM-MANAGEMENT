@@ -39,8 +39,10 @@ class NewsController extends Controller
         }else{
             $news = News::where('new_categories_id',$id)->get();
         }
+        $blogs = News::all();
+
         $categories = NewCategories::all();
-         return view('sitePages.news',compact('news','categories'));
+         return view('sitePages.news',compact('news','categories','blogs'));
     }
     /**
      * Show the form for creating a new resource.

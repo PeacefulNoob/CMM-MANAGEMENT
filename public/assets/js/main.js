@@ -20,15 +20,15 @@ $('.property-index').owlCarousel({
 $('.blogs_owl').owlCarousel({
     responsiveClass:true,
     items:4,
-    loop: true,
+    loop: false,
     margin: 20,
     lazyLoad : true,
-    nav: true,
+    stagePadding: 40,
     dots: true,
     responsive: {
         0: {
             items: 1,
-            nav: true
+            nav: false
         },
 
         850: {
@@ -40,6 +40,32 @@ $('.blogs_owl').owlCarousel({
             nav: true,
         }
     }
+})
+$('.packet_slider').owlCarousel({
+  responsiveClass:true,
+  items:2,
+  loop: false,
+  lazyLoad : true,
+  nav: false,
+
+  responsive: {
+    0: {
+      items: 1,
+      margin: 10,
+      stagePadding: 20,
+  },
+
+  850: {
+      items: 3,
+      margin:50,
+
+  },
+      1400: {
+          items: 3,
+          margin:50,
+
+      }
+  }
 })
 });
 

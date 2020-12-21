@@ -40,6 +40,7 @@
 
  <!-- Styles -->
  <link href="/assets/css/app.css" rel="stylesheet">
+ <link href="/assets/css/responsive.css" rel="stylesheet">
 
 </head>
 <body>

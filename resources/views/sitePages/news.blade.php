@@ -24,10 +24,10 @@
 
         <div class="paddinglr blogs_main row">
                 @foreach($news as $new)
-                    <div class="card col-3 my-5" style="border:none">
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-12 my-5" style="border:none">
                     <a href="/single_news/{{$new->id}}">
  
-                    <img class="card-img-top blog_image" src="{{ $new->image }}" alt="Card image cap">
+                    <img class="card-img-top blog_image" src="/{{ $new->image }}" alt="Card image cap">
                     </a>
 
                         <div class="card-body">

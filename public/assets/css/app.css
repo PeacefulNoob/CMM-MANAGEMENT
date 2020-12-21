@@ -22,14 +22,21 @@
   background-size: cover;
   position: relative;
 }
+.vips a{
+  color: white;
+}
 .section6 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("/assets/images/furnishingCover.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/images/furnishingCover.png");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .section6 h1{
 }
@@ -158,95 +165,11 @@ footer a {
   padding: 20px 10px 5px 10px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 798px) {
-  .slImage {
-    background-image: url(/assets/images/Homepage-cover4-Mobile.jpg) !important;
-  }
-  .postDiv {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-  }
-
-  #section2 {
-    margin-top: 0rem !important;
-  }
-  .search {
-    display: none;
-  }
-  .slImage {
-    height: 100vh !important;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin-top: 0px !important;
-  }
-  .dva span {
-    font-size: 12px !important;
-  }
-  .brandf {
-    display: none;
-  }
-  .nav-mobile {
-    display: block;
-  }
-  .site-block-retro .col1 {
-    width: 100%;
-  }
-  .site-block-retro .col2 {
-    width: 100%;
-  }
-  nav {
-    width: 100%;
-  }
-  nav ul {
-    display: none;
-    height: 100vh;
-    margin: 0;
-    padding: 135px 10px;
-    text-align: center;
-    background-color: #353535;
-  }
-  nav ul li {
-    float: none;
-    background-color: #f5b52b10;
-    margin-top: 20px;
-    border-radius: 20px;
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 20px;
-    color: white !important;
-  }
-  nav ul li ul li a {
-    padding-left: 30px;
-  }
-  .nav-dropdown {
-    position: static;
-  }
-  .episode-guest {
-    position: relative;
-  }
-  .episode {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .episode .episode-body .episode-desc {
-    overflow: hidden;
-    height: 20px;
-  }
-  .footerKontakt {
-    margin: auto;
-  }
+.mobile{
+  display: none !important;
 }
-
-@media screen and (min-width: 799px) {
-  .nav-list {
-    display: table !important;
-  }
+.desktop {
+  display: block !important;
 }
 
 /* properties index
@@ -254,7 +177,9 @@ footer a {
 body {
   font-size: 14px;
 }
-
+img {
+  max-width: 100%;
+}
 img {
   width: 100%;
 }
@@ -434,8 +359,8 @@ width: auto;
   background-color: #ADDBEF;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  border-radius: 15px;
-  padding: 5px 30px 10px 30px;
+          border-radius: 10px;
+          padding: 2px 30px 8px 30px;
 }
 
 .property-index .owl-dots .owl-dot {
@@ -599,15 +524,7 @@ width: auto;
   max-width: 20%;
 }
 
-@media (min-width: 1200px) {
-  .modal-xl {
-    max-width: 100vw;
-  }
-  .modal-content {
-    padding-right: 12%;
-    padding-left: 12%;
-  }
-}
+
 
 .navbar {
   padding-left: 0;
@@ -634,7 +551,9 @@ width: auto;
   margin-top: 3%;
   margin-bottom: 3%;
   margin-left: 0;
+  padding-left: 15%;
   margin-right: 0;
+  padding-right: 15%;
 }
 
 .naslovMain p {
@@ -665,7 +584,6 @@ width: auto;
 }
 .abouts1 h1{
 color: white;
-    font-size: 52px;
 
 }
 .cblue{
@@ -680,7 +598,6 @@ color: white;
 
 }
 h1{
-  font-size: 52px;
   color:#1D4C81 ;
 }
 .abouts4 {
@@ -704,7 +621,6 @@ h1{
 .designs_page p {
   margin-top: 5px;
   color: #7E7E7E;
-  font-size: 18px;
 }
 .blog_image {
   width: 100%;
@@ -715,7 +631,6 @@ h1{
 }
 .designs_page .section1 h1 {
   color: #1D4C81;
-  font-size: 64px !important;
 }
 
 .designs_page .section1 p {
@@ -741,7 +656,6 @@ h1{
 
 .news h1 {
   color: #1D4C81;
-  font-size: 55px;
   font-weight: 800;
 }
 
@@ -813,6 +727,28 @@ color: #8B783B;
 }
 .partners h1{
   color: #8B783B;
+  width: 100%;
 
+}
+.partners h3{
+  color: #8B783B;
+  width: 100%;
+}
+.partners{
+  display: flex;
+  flex-wrap: wrap;
+}
+.vips{
+  width: 14%;
+  max-width: 14%;
+}
+.vips h5{
+  
+  background-color: #8b783b;
+  padding: 10px;
+  margin: 9px;
+  border-radius: 5px;
+  height: 65PX;
+  text-align: CENTER;
 }
 /*# sourceMappingURL=app.css.map */

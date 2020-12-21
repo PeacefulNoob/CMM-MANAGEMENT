@@ -19,8 +19,8 @@
         <p>You only need to define the stile you like and we will do the rest for you!</p>
     </div>
     <div class="row section2 mx-0 padding">
-        <div class="col-5 p-0">
-            <h3>What does it mean?</h3>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-12 p-0">
+            <h3>You only need to define the stile you like and we will do the rest for you!</h3>
             <p>Buying real estate in Montenegro with the help of the CMM team is a great choice. Now it is our job to
                 furnish your apartment and to create interiors that are a true reflection of you. We focus on designing
                 spaces that represent your personal style and functionality needs, paired with our unique and timeless
@@ -29,7 +29,7 @@
                 skilled in handling all aspects of a design job, including project management, budget review, and
                 collaborating with the best furniture salons. Together, we can create the home of your dreams.</p>
         </div>
-        <div class="col-7 pb-4 pl-4 pr-0">
+        <div class="col-lg-7 col-md-7 col-sm-12 slikaDRM col-12 mb-4 pl-4 pr-0">
             <img src="/assets/images/designF.png" alt="">
         </div>
 
@@ -56,17 +56,8 @@
          <img src="/assets/images/repairsImage.png" class="slikaRepairs" alt="">
     </div>
     <div class="section4 row mx-0 padding">
-        <div class="col-6 pt-3 pl-0">
-            <h3>Online interior design and home decorating</h3>
-            <p>Let's make things easier. Furnishing online saves you time and speeds up the whole process. Equip your
-                apartment online and enjoy the benefits that our designers are offering you. Get ideas and jazz up your
-                home interiors with this range of elegant home furnishing products that are available at our site.
-                Giving you a wide choice you will certainly be left spoilt for choice when you are looking for home
-                furnishing products. Shop and avail amazing deals, discounts and offers on this range of home furnishing
-                products at our site. It is up to you to send us some vision and idea and it is up to us to implement it
-                and arrange your apartment to your liking. </p>
-        </div>
-        <div class="col-6 pt-3 pr-0">
+       
+        <div class="col-12 pt-3 pr-0">
             <h3>How does furnishing online work?</h3>
             <p>The furniture and interior design department of CMM will provide you with a personal manager who will
                 present all the necessary information online where you will be able to see the furniture, kitchen
@@ -76,64 +67,58 @@
         </div>
 
     </div>
-    <div class="section6 row mx-0 padding">
+    <div class="section6 row mx-0 ">
         <h1>Furnishing & Design packages:</h1>
-        <div class="row my-5">
-                <div class="col-4  ">
-                <div class="packet p-4">
-                    <p>Furnishing & Design</p>
-                        <h3>Investment rental </h3>
+    <div class="owl-navigation owl-carousel packet_slider owl-theme my-5 ">
+             <div class="packet designPacket p-4">
+             <p>Furnishing & Design</p>
+                        <h3>Economy</h3>
                     
                         <div><ul>
-                            <li> Lorem ipsum dolor sit </li>
-                            <li> amet Ex veri liberavisse duo.</li>
-                            <li>  Vivendo qualisque voluptatum </li>
-                            <li>   duo His omittam accusata at. </li>
-                            <li>   Veri primis eum an Eu eos tota </li>
-                            <li>  aliquip molestie, duo vide minimum </li>
-                            <li>  efficiantur an. Ad mucius pertinacia</li>
-                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
-                            </ul></div>
+                            <li> Universes furniture with standard mechanisms (large selection of decor and colors),</li>
+                            <li> upholstered furniture of middle-class (choice of model furniture and colors of rugs),</li>
+                            <li> middle-class white goods (choice of brand)
+                                                    </li>
+                            <li> lighting for all rooms (we offer a large selection of models)</li>
+                            <li> curtains and decorations (the possibility of choosing models of curtains and color of curtains),</li>
+                            <li> household accessories</li>
+                            </ul>
+                        </div>
                         <a href="/">View all the details</a>
-                </div>
-            </div>
-            <div class="col-4 ">
-                <div class="packet p-4">
-                    <p>Furnishing & Design</p>
-                        <h3>Family residential</h3>
+              </div>
+              <div class="packet designPacket p-4">
+              <p>Furnishing & Design</p>
+                        <h3>Standard</h3>
                     
                         <div><ul>
-                            <li> Lorem ipsum dolor sit </li>
-                            <li> amet Ex veri liberavisse duo.</li>
-                            <li>  Vivendo qualisque voluptatum </li>
-                            <li>   duo His omittam accusata at. </li>
-                            <li>   Veri primis eum an Eu eos tota </li>
-                            <li>  aliquip molestie, duo vide minimum </li>
-                            <li>  efficiantur an. Ad mucius pertinacia</li>
-                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
-                            </ul></div>
+                        <li> Univerist and Mediapan panel furniture with good quality mechanisms (large selection of decors and colors),</li>
+                            <li> upholstered furniture of middle-class (choice of model furniture and colors of rugs),</li>
+                            <li> middle-class white goods (choice of brand)
+                                                    </li>
+                            <li> lighting for all rooms (we offer a large selection of models)</li>
+                            <li> curtains and decorations  (the possibility of choosing models of curtains and color of curtains),</li>
+                            <li> household accessories</li>
+                            </ul>
+                      </div>
                         <a href="/">View all the details</a>
                 </div>
-            </div>
-            <div class="col-4 ">
-                <div class="packet p-4">
-                    <p>Furnishing & Design</p>
-                        <h3>Feel like a king</h3>
+                <div class="packet designPacket p-4">
+                <p>Furnishing & Design</p>
+                        <h3>Premium</h3>
                     
                         <div><ul>
-                            <li> Lorem ipsum dolor sit </li>
-                            <li> amet Ex veri liberavisse duo.</li>
-                            <li>  Vivendo qualisque voluptatum </li>
-                            <li>   duo His omittam accusata at. </li>
-                            <li>   Veri primis eum an Eu eos tota </li>
-                            <li>  aliquip molestie, duo vide minimum </li>
-                            <li>  efficiantur an. Ad mucius pertinacia</li>
-                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
-                            </ul></div>
+                        <li> Universal and Median panel furniture with high quality mechanisms of high-end wind brands,</li>
+                            <li>upholstered furniture of world-class high-end brands (the choice of model sets and colors of mattresses,</li>
+                            <li> white goods of high-end world brands (choice of brand)
+                                                    </li>
+                            <li>lighting for all premises of world-class high-end brands (offering a large selection of models)</li>
+                            <li>curtains and decorations of world-class high-end brands (the possibility of choosing models of curtains and color of curtains),</li>
+                            <li> high-end brand household accessories</li>
+                            </ul>
+                      </div>
                         <a href="/">View all the details</a>
                 </div>
-            </div>
-            </div> 
+       </div>
             </div> 
     <div class="section5 padding">
     <form action="{{ route('contact.store.main') }}" method="POST" class="form-property needs-validation">

@@ -20,8 +20,8 @@
 </p>
     </div>
     <div class="row section2 mx-0 padding">
-        <div class="col-5 p-0">
-            <h3>What does it mean?</h3>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-12 p-0">
+            <h3>We value your trust!</h3>
             <p>Buying real estate in Montenegro with the help of the CMM team is a great choice. Now it is our job to
                 furnish your apartment and to create interiors that are a true reflection of you. We focus on designing
                 spaces that represent your personal style and functionality needs, paired with our unique and timeless
@@ -30,7 +30,7 @@
                 skilled in handling all aspects of a design job, including project management, budget review, and
                 collaborating with the best furniture salons. Together, we can create the home of your dreams.</p>
         </div>
-        <div class="col-7 pb-4 pl-4 pr-0">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-12 slikaDRM mb-4 pl-4 pr-0">
             <img src="/assets/images/propertyM.png" alt="">
         </div>
 
@@ -42,13 +42,13 @@
     <div class="section3 ">
         <div class="padding  "> 
         <h3> Services that we offer: </h3>
-        <ul class="list-unstyled col-6">
+        <ul class="list-unstyled col-12 col-lg-6 col-md-6 col-sm-12">
             <li> - &nbsp; &nbsp; &nbsp; Payment of utility services </li>
             <li> - &nbsp; &nbsp; &nbsp; Checking the communications </li>
             <li> - &nbsp; &nbsp; &nbsp; Airing real estate </li>
             <li> - &nbsp; &nbsp; &nbsp; Cleaning the property </li>
         </ul>
-        <ul class="list-unstyled col-6">
+        <ul class="list-unstyled col-12 col-lg-6 col-md-6 col-sm-12">
             <li> - &nbsp; &nbsp; &nbsp; Airport transfer </li>
             <li> - &nbsp; &nbsp; &nbsp; General cleaning before client`s arrival </li>
             <li> - &nbsp; &nbsp; &nbsp; Photo report</li>
@@ -62,47 +62,49 @@
             <h3>Building maintenance</h3>
             <p>Building maintenance refers to all tasks necessary for keeping a building functional and livable. Building maintenance includes a variety of tasks that help create a safe and comfortable work or living environment for a building’s tenants. Ranging from anything inside a building, like cleaning bathrooms and maintaining electrical systems, to anything outside a building, like lawn care and landscaping, routine maintenance services are performed to keep properties in tip-top shape. Represent and protect housing rights and interests of owners of premises for general use residential property; Perform work on the proper content, maintenance and repair of common property in residential house. </p>
     </div>
-    <div class="section6 row mx-0 padding">
+    <div class="section6 row mx-0 ">
     <h1>Property Maintenance packages:</h1>
-    <div class="row my-5">
-            <div class="col-4 ">
-                <div class="packet p-4">
+ 
+    
+    <div class="owl-navigation owl-carousel packet_slider owl-theme my-5 ">
+             <div class="packet maintPacket p-4">
+                    <p>Property Maintenance</p>
+                        <h3>Exterior maintenance</h3>
+                        <div>
+                            <ul>
+                                <li>Testing and controlling the communication systems </li>
+                                <li>light maintaining cleaning</li>
+                                <li> Gardener’s services </li>
+                                <li> Lawn mowing and watering </li>
+                                <li> Services of cleaning and care for the common territory</li>
+                                <li> Preparations for the arrival of the owner to the property </li>
+                                <li> Photo-report of the property each month</li>
+                                <li> Servicing of the pools)</li>
+                            </ul>
+                        </div>
+                        <a href="/">View all the details</a>
+              </div>
+              <div class="packet maintPacket p-4">
                     <p>Property Maintenance</p>
                         <h3>Interior maintenance</h3>
                     
-                        <div><ul>
-                            <li> Lorem ipsum dolor sit </li>
-                            <li> amet Ex veri liberavisse duo.</li>
-                            <li>  Vivendo qualisque voluptatum </li>
-                            <li>   duo His omittam accusata at. </li>
-                            <li>   Veri primis eum an Eu eos tota </li>
-                            <li>  aliquip molestie, duo vide minimum </li>
-                            <li>  efficiantur an. Ad mucius pertinacia</li>
-                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
-                            </ul></div>
+                        <div>
+                            <ul>
+                                <li>  Payment of utility services </li>
+                                <li> Checking the communications </li>
+                                <li> Airing real estate </li>
+                                <li>  Cleaning the property </li>
+                                <li> Airport transfer </li>
+                                <li>  General cleaning before client`s arrival </li>
+                                <li>  Photo report</li>
+                                <li>  Manager assistance</li>
+                            </ul>
+                      </div>
                         <a href="/">View all the details</a>
                 </div>
-            </div>
-            <div class="col-4  ">
-                <div class="packet p-4">
-                    <p>Property Maintenance</p>
-                        <h3>Exterior maintenance</h3>
-                    
-                        <div><ul>
-                            <li> Lorem ipsum dolor sit </li>
-                            <li> amet Ex veri liberavisse duo.</li>
-                            <li>  Vivendo qualisque voluptatum </li>
-                            <li>   duo His omittam accusata at. </li>
-                            <li>   Veri primis eum an Eu eos tota </li>
-                            <li>  aliquip molestie, duo vide minimum </li>
-                            <li>  efficiantur an. Ad mucius pertinacia</li>
-                            <li>    incorrupte duo, alienum repudiare eu sed.</li>
-                            </ul></div>
-                        <a href="/">View all the details</a>
-                </div>
-            </div>
-        </div> 
-        </div> 
+       </div>
+    </div>
+
     <div class="section5 padding">
         <form action="{{ route('contact.store.main') }}" method="POST" class="form-property needs-validation">
             {{ csrf_field() }}

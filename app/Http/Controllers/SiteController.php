@@ -15,17 +15,19 @@ class SiteController extends Controller
         $covid = Covid::find('1')->first();
 
      $blogs = News::all();
-     return view('sitePages.index',compact('blogs','covid'));
+     return view('sitePages.index',compact('blogs','covid','blogs'));
 
     }
     public function about()
     {
-        return view ('sitePages.about');
+        $blogs = News::all();
+        return view ('sitePages.about',compact('blogs'));
     }
     public function vip()
     {
+        $blogs = News::all();
         $vips = Vip::all();
-        return view ('sitePages.vip',compact('vips'));
+        return view ('sitePages.vip',compact('vips','blogs'));
     }
     public function single_news($id)
     {

@@ -9,6 +9,7 @@ use Auth;
 use DB;
 use Gate;
 use App\RImage;
+use App\News;
 
 class RepairsController extends Controller
 {
@@ -19,8 +20,10 @@ class RepairsController extends Controller
      */
     public function index()
     {
+        $blogs = News::all();
+
         $repairs = Repair::all();
-        return view('sitePages.repairs',compact('repairs'));
+        return view('sitePages.repairs',compact('repairs','blogs'));
     }
 
     /**
