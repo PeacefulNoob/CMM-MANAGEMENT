@@ -8,12 +8,12 @@
     ;
   }
   .card{
-    background-color: transparent;
+    background-color: transparent !important;
 
   }
  .form-control option { 
     background-color: #1D4C81;
-border-radius: 5px;
+  border-radius: 5px;
 }
   .form-control {
     display: block;
