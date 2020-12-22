@@ -2,8 +2,8 @@
     width: 100%;
   }
   body{
-     color:white;
-    background-color: #1D4C81
+    color: white !important;
+    background-color: #1D4C81 !important;
 
     ;
   }
@@ -28,6 +28,7 @@ border-radius: 5px;
     border-radius: 6px !important;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
 .labelNew {
   display: inline-block;
   position: absolute;

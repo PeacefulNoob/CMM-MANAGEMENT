@@ -13,7 +13,7 @@
   </div>
   <div class="form-group">
     <label for="description1">Description</label>
-    <textarea class="ckeditor form-control" name="description"></textarea>
+    <textarea class="form-control summernote" name="description">{{$new->description}}</textarea>
   </div>
   <div class="form-group">
             <label for="image">Upload photo</label>
@@ -23,7 +23,6 @@
   <div class="form-group">
       <label for="new_categories_id">News Category</label>
       <select name="new_categories_id" id="new_categories_id">
-      <option value="{{$new->new_categories_id}}">{{$new->categories->title}}</option>
       @foreach($categories as $cat)
        <option value="{{$cat->id}}">{{$cat->title}}</option>
        @endforeach
@@ -32,4 +31,11 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+<script type="text/javascript">
+        $(document).ready(function() {
+         $('.summernote').summernote({
+               height: 300,
+          });
+       });
+    </script>
 @endsection

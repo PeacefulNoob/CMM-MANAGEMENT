@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="container-fluid adminPage">
+<div class="container-fluid adminPage ">
 <form action="{{ route('news.store')}}"  method="POST" enctype="multipart/form-data"    class="form-horizontal mb-0">
     @csrf
     <div class="form-group">
@@ -10,7 +10,7 @@
     </div>
     <div class="form-group">
       <label for="description1">Description</label>
-      <textarea class="ckeditor form-control" name="description"></textarea>
+      <textarea class="form-control summernote" name="description"></textarea>
     </div>
     <div class="form-group">
             <label for="image">Upload photo</label>
@@ -28,4 +28,13 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+         $('.summernote').summernote({
+               height: 300,
+          });
+       });
+    </script>
 @endsection
