@@ -22,7 +22,7 @@
                     <img class="card-img-top blog_image" src="/{{ $blog->image }}" alt="Card image cap">
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">{{ $blog->title }}</h5>
+                        <h5 class="card-title">  {{ \Illuminate\Support\Str::words($blog->title, 5 ) }}            </h5>
 
                     </div>
                     <div class="card-footer">
