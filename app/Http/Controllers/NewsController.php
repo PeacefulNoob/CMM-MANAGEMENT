@@ -136,11 +136,12 @@ class NewsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $new = News::find($id);
+
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'description' => 'required',
             'new_categories_id' => 'required',
-            'image' => 'required',
 
         ]);
 
@@ -149,7 +150,29 @@ class NewsController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
+/*         $dom = new \DomDocument();
+        $dom->loadHtml($description, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
+        $images = $dom->getElementsByTagName('img');
 
+        foreach($images as $k => $img){
+            $data = $img->getAttribute('src');
+
+            list($type, $data) = explode(';', $data);
+            list(, $data)      = explode(',', $data);
+            $data = base64_decode($data);
+
+            $image_name= "/assets/images/" . time().$k.'.png';
+            $path = public_path() . $image_name;
+
+            file_put_contents($path, $data);
+            
+            $img->removeAttribute('src');
+            $img->setAttribute('src', $image_name);
+        }
+
+        $description = $dom->saveHTML(); */
+        if($request->hasfile('image'))
+        {       
         $file = $request->file('image');
         $extension = $file->getclientOriginalExtension();
         $size = $file->getSize();
@@ -157,7 +180,10 @@ class NewsController extends Controller
         $photo_name = 'news-' . time() . '' . $rand . '.' . $extension;
         $path = public_path('assets/images/news/'. $photo_name);
         Image::make($file)->encode('jpg', 75)->resize(1200, null, function($constraint) {$constraint->aspectRatio();})->save($path);
-      
+        }
+        else{
+            $path = $new->image;
+        }
         DB::table('news')->where('id', $id)->update([
             'title' => $request->title,
             'description' => $request->description,
@@ -166,7 +192,7 @@ class NewsController extends Controller
 
         ]);
         
-        return redirect()->back()->with('success', 'Successfully updated news post '.$news->title.'.');
+        return redirect()->back()->with('success', 'Successfully updated news post '.$new->title.'.');
     }
 
     /**
@@ -184,5 +210,10 @@ class NewsController extends Controller
             return redirect()->back()->with('success', 'Successfully deleted news post '.$news->title.'.');
         
     
+    }
+
+    public function image()
+    {
+        return view('sitePages.testEditor');
     }
 }

@@ -55,3 +55,6 @@ Route::post('Inquiry', [
     'uses' => 'EmailController@exc',
     'as' => 'contact.store.main'
 ]);
+Route::get('/summernote-image','NewsController@image');
+
+Route::post('summernote-image',array('as'=>'summernote.image.upload','uses'=>'NewsController@uploada'));
