@@ -23,11 +23,12 @@ $('.blogs_owl').owlCarousel({
     loop: false,
     margin: 20,
     lazyLoad : true,
-    stagePadding: 40,
     dots: true,
     responsive: {
         0: {
             items: 1,
+            stagePadding: 40,
+
             nav: false
         },
 

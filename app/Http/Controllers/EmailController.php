@@ -14,7 +14,7 @@ class EmailController extends Controller
             'name' => 'required|string|max:255',
             'message' => 'required|string',
             'email' => 'required|email',
-            'title' => 'required|string|max:255',
+            'title' => 'required|string|max:555',
          
 
         ]);

@@ -14,7 +14,7 @@
                  <h2>{{ $blog->title }}</h2>
            </div>
            <div class="single_news_date py-1">
-                 <p>By {{ $blog->user->name }} on {{ $blog->created_at }}</p>
+                 <p>By CMM Admin on {{ $blog->created_at }}</p>
            </div>
            <div class="single_news_body py-2">
                  <p>{!! $blog->description !!}</p>
@@ -28,7 +28,10 @@
                         <img class="card-img-top blog_image" src="/{{ $blog->image }}" alt="Card image cap">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">{{ $blog->title }}</h5>
+                            <h5 class="card-title">    
+                             @php
+                                echo substr($blog->title, 0, 60);
+                            @endphp...</h5>
                             <p class="card-text">
                                 @php
 
@@ -37,7 +40,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                        <p>  By {{$blog->user->name}} on {{ $blog->created_at }}</p> 
+                        <p>{{ $blog->created_at }}</p> 
                         </div>
                     </div>
 

@@ -63,6 +63,9 @@
   background-color: #1D4C81;
   margin-bottom: 5px;
 }
+.owl-prev,.owl-next  {
+  outline: none !important;
+}
 .section6 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("/assets/images/furnishingCover.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/images/furnishingCover.png");

@@ -16,6 +16,11 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:adman')->except('show','all_news');
+
+    }
     /**
      * Display a listing of the resource.
      *
@@ -79,6 +84,27 @@ class NewsController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
+        $dom = new \DomDocument();
+        $dom->loadHtml($request->description, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
+        $images = $dom->getElementsByTagName('img');
+
+        foreach($images as $k => $img){
+            $data = $img->getAttribute('src');
+
+            list($type, $data) = explode(';', $data);
+            list(, $data)      = explode(',', $data);
+            $data = base64_decode($data);
+
+            $image_name= "/assets/images/news/" . time().$k.'.jpg';
+            $path = public_path() . $image_name;
+            Image::make($data)->encode('jpg', 65)->save($path);
+            
+            $img->removeAttribute('src');
+            $img->setAttribute('src', $image_name);
+        }
+
+        $description = $dom->saveHTML();
+        
         $file = $request->file('image');
         $extension = $file->getclientOriginalExtension();
         $size = $file->getSize();
@@ -90,7 +116,7 @@ class NewsController extends Controller
         // Create 
         $post = new News;
         $post->title = $request->input('title');
-        $post->description = $request->input('description');
+        $post->description = $description;
         $post->image =  $path;
         $post->new_categories_id = $request->input('new_categories_id');
         $post->user_id =  $userId;
@@ -150,27 +176,29 @@ class NewsController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-/*         $dom = new \DomDocument();
-        $dom->loadHtml($description, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
+        $dom = new \DomDocument();
+        $dom->loadHtml($request->description, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);    
         $images = $dom->getElementsByTagName('img');
 
         foreach($images as $k => $img){
             $data = $img->getAttribute('src');
-
+            if(strlen($data)>140){
             list($type, $data) = explode(';', $data);
             list(, $data)      = explode(',', $data);
+
             $data = base64_decode($data);
 
-            $image_name= "/assets/images/" . time().$k.'.png';
+            $image_name= "/assets/images/news/" . time().$k.'.jpg';
             $path = public_path() . $image_name;
-
-            file_put_contents($path, $data);
+            Image::make($data)->encode('jpg', 65)->save($path);
             
             $img->removeAttribute('src');
             $img->setAttribute('src', $image_name);
+            }
         }
 
-        $description = $dom->saveHTML(); */
+        $description = $dom->saveHTML();
+
         if($request->hasfile('image'))
         {       
         $file = $request->file('image');
@@ -186,7 +214,7 @@ class NewsController extends Controller
         }
         DB::table('news')->where('id', $id)->update([
             'title' => $request->title,
-            'description' => $request->description,
+            'description' => $description,
             'new_categories_id' => $request->new_categories_id,
             'image' => $path,
 
@@ -212,8 +240,5 @@ class NewsController extends Controller
     
     }
 
-    public function image()
-    {
-        return view('sitePages.testEditor');
-    }
+    
 }

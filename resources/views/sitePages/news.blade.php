@@ -31,7 +31,11 @@
                     </a>
 
                         <div class="card-body">
-                            <h5 class="card-title">{{ $new->title }}</h5>
+                        <h5 class="card-title">
+                                                        @php
+
+                            echo substr($new->title, 0, 60);
+                            @endphp...</h5>
     
                         </div>
                         <div class="card-footer">
