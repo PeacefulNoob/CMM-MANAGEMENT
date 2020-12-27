@@ -1,8 +1,17 @@
 @extends('layouts.master')
 @section('content')
-<div class="homeMain">
-  <div class="container">
-
+<style>
+  .header{
+    position: relative;
+  }
+  .card{
+    background-color: transparent;
+  }
+  </style>
+<div class="homeMain paddinglr">
+<div class="my-5">
+  <h1>Frequently asked Questions</h1>
+</div>
 <div class="row"  style="margin-bottom: 30px;">
     <?php
     $colcount = count($faqs);
@@ -12,7 +21,7 @@
     <div class="card">
         <div class="card-header">
           {{$faq->question}}
-          @can('admin')
+          @can('adminPriv')
           <div class="adminButtons"> 
           <a href="{{ route('faqs.edit',$faq->id) }}"><button
               type="button" class="btn btn-primary">Edit</button></a> 
@@ -50,6 +59,5 @@
     
   </div>
 
-</div>
 </div>
 @endsection

@@ -19,7 +19,9 @@
                   <li class="">
                     <a class="" href="/repairs">Renovations & Repairs</a>
                   </li>
-
+                  <li>
+                    <a target="_blank" href="/faqs"> FaQ </a>
+                </li>
 
             </ul>
         </div>
