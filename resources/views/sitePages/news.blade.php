@@ -39,7 +39,8 @@
     
                         </div>
                         <div class="card-footer">
-                            <p> {{ $new->created_at }}</p>
+                            <p>                             {{ $new->created_at->formatLocalized('%a, %b %d, %Y ') }}
+</p>
                             @can('admin')
                                 <div class="adminButtons">
                                     <a href="{{ route('news.edit',$new->id) }}"><button

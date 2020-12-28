@@ -68,7 +68,11 @@
   padding-left: 5%;
   padding-right: 5%;
  
-}.section6{
+}
+.property-index, .designs_page a{
+  font-weight: 500;
+}
+.section6{
   padding-left: 0%;
   padding-right: 0%;
 }

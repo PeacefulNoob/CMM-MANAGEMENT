@@ -32,15 +32,11 @@
                              @php
                                 echo substr($blog->title, 0, 60);
                             @endphp...</h5>
-                            <p class="card-text">
-                                @php
-
-                                    echo substr($blog->description, 0, 135);
-                                @endphp...
-                            </p>
+                         
                         </div>
                         <div class="card-footer">
-                        <p>{{ $blog->created_at }}</p> 
+                        <p>                            {{ $blog->created_at->formatLocalized('%a, %b %d, %Y ') }}
+</p> 
                         </div>
                     </div>
 

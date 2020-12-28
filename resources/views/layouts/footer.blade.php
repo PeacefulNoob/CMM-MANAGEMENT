@@ -32,7 +32,7 @@
                 </li>
                 <li>
                     <div class="d-flex">
-                        <div > <p class="bold pr-1"> Adress :</p></div>
+                        <div > <p class="bold pr-1"> Adress:</p></div>
                         <div>
                             <p>Jadranski put b.b. Budva, Montenegro</p>
                             <p> Adress 2, Moskow, Russia</p>
@@ -64,10 +64,10 @@
                     <h4>USEFUL LINKS</h4>
                 </li>
                 <li>
-                    <a target="_blank" href="#">Ministery of Economy</a>
+                    <a target="_blank" href="https://mek.gov.me/en/ministry">Ministery of Economy</a>
                 </li>
                 <li>
-                    <a target="_blank" href="#">Ministery of Finance </a>
+                    <a target="_blank" href="https://www.mif.gov.me/en/ministry">Ministery of Finance </a>
                 </li>
                  <li>
                     <ul>
@@ -109,8 +109,9 @@
     </div>
 
     <div class="footer2">
-        <div class="left_footer">
-            <p>All rights - CMM</p>
+    <div class="left_footer">
+            <p>© Copyright 2011 - 2020. CMM Investment Consulting Group.
+</p>
         </div>
         <div class="right_footer">
             <p>Made by QQRIQ</p>
