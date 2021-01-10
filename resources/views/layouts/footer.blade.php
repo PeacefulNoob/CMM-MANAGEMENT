@@ -7,7 +7,7 @@
                     <h4>OUR SERVICES</h4>
                 </li>
                 <li>
-                    <a target="_blank" href="/vip">VIP</a>
+                    <a href="/vip">VIP</a>
                 </li>
                 <li class="">
                     <a class="" href="/designs">Furnishing & Design <span class="sr-only">(current)</span></a>
@@ -20,7 +20,7 @@
                     <a class="" href="/repairs">Renovations & Repairs</a>
                   </li>
                   <li>
-                    <a target="_blank" href="/faqs"> FaQ </a>
+                    <a href="/faqs"> FaQ </a>
                 </li>
 
             </ul>

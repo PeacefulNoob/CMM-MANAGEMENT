@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Design;
-use App\DImage;
-
+use App\User;
+use Gate;
 class HomeController extends Controller
 {
     /**
@@ -25,9 +24,8 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-
-        $designs = Design::all();
-        return view('home',compact('designs'));
+        $users = User::all();
+        return view ('admin.users.index',compact('users'));
         
     }
 }

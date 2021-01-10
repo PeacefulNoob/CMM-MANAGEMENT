@@ -4,6 +4,9 @@
 .header{
   position: relative;
 }
+p {
+    font-weight: inherit;
+}
 </style>
 <div class="homeMain">
     <div class="paddinglr single_news_section my-5">
@@ -14,7 +17,7 @@
                  <h2>{{ $blog->title }}</h2>
            </div>
            <div class="single_news_date py-1">
-                 <p>By CMM Admin on {{ $blog->created_at }}</p>
+                 <p>Published :       {{ $blog->created_at->formatLocalized('%a, %b %d, %Y ') }}</p>
            </div>
            <div class="single_news_body py-2">
                  <p>{!! $blog->description !!}</p>

@@ -27,7 +27,9 @@
                         <p>{{ $new->title }}</p>
                     </td>
                     <td>
-                        <p>{!! $new->description !!}
+                        <p>             @php
+                                        echo substr($new->title, 0, 100);
+                                        @endphp...
                         </p>
                     </td>
                     

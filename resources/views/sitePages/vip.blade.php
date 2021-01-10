@@ -21,7 +21,7 @@
 <h1 >CMM VIP </h1><h3 class="pb-3"> You have someone you can rely on! </h3>
 @forelse ($vips as $vip)
     <div class="vips">
-      <a href="{{$vip->address}}">
+      <a target="_blank" href="{{$vip->address}}">
       <h5>{{$vip->title}}</h5></a>
     </div>
 @empty

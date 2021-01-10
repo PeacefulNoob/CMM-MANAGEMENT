@@ -26,7 +26,7 @@ class FaqController extends Controller
         $blogs = News::all();
 
         $faqs= Faq::all();
-        return view ('sitePages.Faq',compact('faqs','blogs'));
+        return view ('sitePages.faq',compact('faqs','blogs'));
 
     }
 
