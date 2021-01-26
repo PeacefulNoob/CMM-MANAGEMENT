@@ -134,7 +134,7 @@
                 <div class="form_inquiry">
                     <div class="form-row m-0">
                         <div class="form-group col-md-6 form_inquiry_left">
-                            <label for="name">WHAT IS YOUR NAME</label>
+                            <label for="name"> YOUR NAME</label>
                             <input type="text" class="form-control" name="name" id="name"
                                 placeholder="Put the name and surname please " required>
                                 <div class="valid-feedback">
@@ -142,7 +142,7 @@
                                         </div>
                         </div>
                         <div class="form-group col-md-6 form_inquiry_right ">
-                            <label for="email">WHAT IS YOUR E-MAIL ADRESS?</label>
+                            <label for="email"> E-MAIL ADRESS ?</label>
                             <input type="email" class="form-control" name="email" id="email"
                                 placeholder="Put your e-mail adress please" required>
                                 <div class="valid-feedback">

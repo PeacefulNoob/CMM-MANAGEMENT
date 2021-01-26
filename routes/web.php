@@ -12,12 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('covids','CovidController');
-Route::resource('faqs','FaqController');
 Route::resource('designs','DesignContoller');
 Route::resource('news','NewsController');
 Route::resource('maintenances','MaintenanceController');
 Route::resource('repairs','RepairsController');
+Route::resource('faqs','FaqController');
 
 Route::get('/all_news/{id}','NewsController@all_news');
 Route::get('/about', 'SiteController@about')->name('about');
@@ -32,12 +31,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
 
 
 });
-Route::group(
-    ['middleware' => ['auth']],
-    function () {
 
-    }
-);
 Route::group(['middleware' => 'can:adman'], function() {
     Route::get('/home', 'HomeController@index')->name('admin/home');\
     Route::get('/all_maintenances','MaintenanceController@index1');
@@ -47,7 +41,7 @@ Route::group(['middleware' => 'can:adman'], function() {
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
     Route::resource('/users','UsersController',['except' => ['show','create','store']]);
-    
+
 });
 Route::get('/', 'SiteController@index')->name('home');
 

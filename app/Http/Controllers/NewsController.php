@@ -28,7 +28,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news = News::all();
+        $news = News::orderBy('id', 'DESC')->get();
+
          return view('admin.allNews',compact('news'));
     }
     
@@ -44,7 +45,7 @@ class NewsController extends Controller
         }else{
             $news = News::where('new_categories_id',$id)->get();
         }
-        $blogs = News::all();
+        $blogs = News::orderBy('id', 'DESC')->get();
 
         $categories = NewCategories::all();
          return view('sitePages.news',compact('news','categories','blogs'));

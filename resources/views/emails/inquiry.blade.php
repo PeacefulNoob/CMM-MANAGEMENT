@@ -1,5 +1,5 @@
 @component('mail::message')
-# New Inqyiry from {{$data['name']}}
+# New Inquiry from {{$data['name']}}
 {{$data['email']}}
 
 

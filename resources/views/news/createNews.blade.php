@@ -32,10 +32,11 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-       /*   $('.summernote').summernote({
+         $('.summernote').summernote({
                height: 300,
-          }); */
-          $('#summernote').summernote({
+          }); 
+        }); 
+     /*      $('#summernote').summernote({
           toolbar: [
             // [groupName, [list of button]]
             ['style', ['bold', 'italic', 'underline', 'clear']],
@@ -47,6 +48,6 @@
           ],
           height: 300,
         });
-       });
+       }); */
     </script>
 @endsection

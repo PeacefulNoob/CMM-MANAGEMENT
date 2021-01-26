@@ -66,6 +66,8 @@ class CovidController extends Controller
      */
     public function edit($id)
     {
+       $this->authorize('adman');
+       
         $covid = Covid::find($id);
         return view('covid.editCovid',compact('covid'));
     }

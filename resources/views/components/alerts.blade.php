@@ -25,6 +25,23 @@
         </ul>
     </div>
 @endif -->
+@if (session('contact'))
+<div class="alertDiv">
+  <div class="alert alert-success alert-dismissable">
+            <div class="alertwrapper clearfix">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span> </button>
+                  <div class="alerticon successful">
+                <span class="glyphicon glyphicon-ok-sign"></span>
+              </div>
+              <div class="alertcontent">
+                <h4>Message sent!</h4>
+                {{session('contact')}} 
+              </div>
+            </div>
+          </div>
+          </div>
+@endif
 
 @if (session('success'))
 <div class="alertDiv">

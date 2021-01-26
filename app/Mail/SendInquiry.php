@@ -31,7 +31,7 @@ class SendInquiry extends Mailable
     {
         $data = $this->request;
         
-        return $this->from('test.qqriq@gmail.com')
+        return $this->from('cmmizdavanje@gmail.com')
         ->subject('CMM-Management | '.$this->request['title'])
         ->markdown('emails.inquiry',compact('data'));
     }

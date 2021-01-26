@@ -13,17 +13,22 @@
     <meta name="keywords" content="real estate,apartments,apartment,house,summer,crna gora,montenegro,enjoy,winter,top,luxury,afordable,reasonable,kotor,sea,house,lovely">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="PeacefulNoob">  
-
-    <meta property="og:image" content="https://cmm-management.com/assets/images/logo1.png" />
+{{--
+    <link rel="shortcut icon" href="/bitrix/templates/ru_design/img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="/bitrix/templates/ru_design/img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/bitrix/templates/ru_design/img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/bitrix/templates/ru_design/img/logos/apple-touch-icon-114x114.png">
+    --}}
+    <meta property="og:image" content="https://cmm-management.com/assets/images/favicon1.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cmm-management.com/" />
     <meta property="og:title" content="CMM | Management" />
     <meta property="og:description" content="CMM | Management website" />
   
-    <link rel="icon" type="image/png" href="/images/Bar-ikonica.png" />
-    <link rel="apple-touch-icon-precomposed" href="/assets/images/logo1.png" type="image/png" sizes="152x152" />
-    <link rel="apple-touch-icon-precomposed" href="/assets/images/logo1.png" type="image/png" sizes="120x120" />
-    <link rel="apple-touch-icon" href="/assets/images/logo1.png" sizes="180x180" />
+     <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon.png" type="image/png" sizes="152x152" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon.png" type="image/png" sizes="120x120" />
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png" sizes="180x180" />
     
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -41,7 +46,19 @@
  <!-- Styles -->
  <link href="/assets/css/app.css" rel="stylesheet">
  <link href="/assets/css/responsive.css" rel="stylesheet">
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/600fe545c31c9117cb728420/1esv1f5vk';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </head>
 <body>
     @include('layouts.header')

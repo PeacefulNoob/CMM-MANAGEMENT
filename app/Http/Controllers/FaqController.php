@@ -12,10 +12,11 @@ use App\News;
 
 class FaqController extends Controller
 {
-    public function __construct()
+     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index']]);
-    }
+
+        $this->middleware('can:adman', ['except' => ['index']]);
+    } 
     /**
      * Display a listing of the resource.
      *
@@ -37,7 +38,10 @@ class FaqController extends Controller
      */
     public function create()
     {
+              //  $this->authorize('adman', App\Faq::class);
+
         return view('admin.createFaq');
+        
     }
 
     /**

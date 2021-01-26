@@ -15,6 +15,9 @@
     background-color: #1D4C81;
   border-radius: 5px;
 }
+.btn{
+border:none !important;
+}
   .form-control {
     display: block;
     width: 100%;
@@ -59,7 +62,8 @@
     color: black;
   }
   .btn-warning  {
-    background-color:   #d86a6a    !important;
+    background-color:   #1D4C81   !important;
+    color: white !important;
   }
   .sidenav{
     padding-left: 20px;
@@ -102,7 +106,6 @@
   border-right: 1px solid rgba(222, 228, 236, 0.1);
 }
 .dark-theme .main-sidebar-header {
-  background-color: #191d21;
   background-color: #191d21;
 }
 .main-sidebar-header {

@@ -23,7 +23,7 @@ class EmailController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-           Mail::to('test.qqriq@gmail.com')->send(new SendInquiry($request));
+           Mail::to('cmmizdavanje@gmail.com')->send(new SendInquiry($request));
            return redirect()->back()->with('contact', 'Message Sent! Our representative will contact you back through e-mail with the confirmation as soon as possible. ');
     }
 

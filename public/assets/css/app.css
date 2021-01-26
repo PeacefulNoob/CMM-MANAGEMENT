@@ -2,7 +2,9 @@
   padding-left: 12%;
   padding-right: 12%;
 }
-
+.nav-link h5{
+  text-transform: uppercase;
+}
 .header {
   position: fixed;
   z-index: 2;
@@ -167,6 +169,7 @@
 
 .nav-link h5 {
   margin: 0;
+  font-size: 14px !important;
 }
 footer {
   padding-top: 1%;
