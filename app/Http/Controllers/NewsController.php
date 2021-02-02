@@ -105,15 +105,21 @@ class NewsController extends Controller
         }
 
         $description = $dom->saveHTML();
-        
+        if ($request->hasFile('image')) 
+        {
         $file = $request->file('image');
         $extension = $file->getclientOriginalExtension();
         $size = $file->getSize();
         $rand = Str::random(4);
         $photo_name =  time() . '' . $rand . '.' . $extension;
         $path = 'assets/images/news/'.$photo_name;
+
         Image::make($file)->encode('jpg', 75)->resize(1200, null, function($constraint) {$constraint->aspectRatio();}) ->save($path);
-      
+         }
+        else
+        {
+            $path= '';
+        }
         // Create 
         $post = new News;
         $post->title = $request->input('title');
@@ -207,17 +213,18 @@ class NewsController extends Controller
         $size = $file->getSize();
         $rand = Str::random(4);
         $photo_name = 'news-' . time() . '' . $rand . '.' . $extension;
-        $path = public_path('assets/images/news/'. $photo_name);
+        $store_path= 'assets/images/news/'. $photo_name;
+        $path = public_path( $store_path);
         Image::make($file)->encode('jpg', 75)->resize(1200, null, function($constraint) {$constraint->aspectRatio();})->save($path);
         }
         else{
-            $path = $new->image;
+            $store_path = $new->image;
         }
         DB::table('news')->where('id', $id)->update([
             'title' => $request->title,
             'description' => $description,
             'new_categories_id' => $request->new_categories_id,
-            'image' => $path,
+            'image' => $store_path,
 
         ]);
         
