@@ -7,51 +7,12 @@
     <div class="hero">
         <div class="hero-image">
             <div class="hero-text">
-                <h1>PUT YOUR HOME IN TRUSTED HANDS</h1>
-
+                <h2>PUT YOUR HOME IN TRUSTED HANDS</h2>
             </div>
         </div>
     </div>
 
-    <div class=" blogs_main ">
-        <div class="owl-navigation owl-carousel blogs_owl owl-theme ">
-            @foreach($blogs as $blog)
-                <div class="card" style="border:none">
-                    <a href="/single_news/{{$blog->id}}">
-
-                    <img class="card-img-top blog_image" src="/{{ $blog->image }}" alt="Card image cap">
-                    </a>
-                    <div class="card-body">
-                    <h5 class="card-title">
-                                                        @php
-
-                            echo substr($blog->title, 0, 60);
-                            @endphp...</h5>
-
-                    </div>
-                    <div class="card-footer">
-                        <p> {{ $blog->created_at->formatLocalized('%a, %b %d, %Y ') }}</p> 
-                      
-                        @can('admin')
-                            <div class="adminButtons">
-                                <a href="{{ route('news.edit',$blog->id) }}"><button
-                                        type="button" class="btn btn-primary">Edit</button></a>
-
-                                <form action="{{ route('news.destroy',$blog) }}" method="POST"
-                                    class="float-left">
-                                    @csrf
-                                    {{ method_field('DELETE') }}
-                                    <button type="submit" class="btn btn-warning">Delete</button>
-                                </form>
-                            </div>
-                        @endcan
-                    </div>
-                </div>
-
-            @endforeach
-        </div>
-
-    </div>
+  
     <div class="paddinglr property ">
         
         <div class="owl-navigation owl-carousel property-index owl-theme ">
@@ -103,6 +64,45 @@
 
             </div>
         </div>
+    </div>
+    <div class=" blogs_main ">
+        <div class="owl-navigation owl-carousel blogs_owl owl-theme ">
+            @foreach($blogs as $blog)
+                <div class="card" style="border:none">
+                    <a href="/single_news/{{$blog->id}}">
+
+                    <img class="card-img-top blog_image" src="/{{ $blog->image }}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">
+                                                        @php
+
+                            echo substr($blog->title, 0, 60);
+                            @endphp...</h5>
+
+                    </div>
+                    <div class="card-footer">
+                        <p> {{ $blog->created_at->formatLocalized('%a, %b %d, %Y ') }}</p> 
+                      
+                        @can('admin')
+                            <div class="adminButtons">
+                                <a href="{{ route('news.edit',$blog->id) }}"><button
+                                        type="button" class="btn btn-primary">Edit</button></a>
+
+                                <form action="{{ route('news.destroy',$blog) }}" method="POST"
+                                    class="float-left">
+                                    @csrf
+                                    {{ method_field('DELETE') }}
+                                    <button type="submit" class="btn btn-warning">Delete</button>
+                                </form>
+                            </div>
+                        @endcan
+                    </div>
+                </div>
+
+            @endforeach
+        </div>
+
     </div>
 </div>
 @endsection

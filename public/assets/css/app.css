@@ -61,6 +61,19 @@
   object-fit: cover;
   border-radius: 5px;
 }
+.tekstAbout{
+  z-index: 3;
+}
+.vip_section1 p{
+  text-align: justify;
+}
+.designs_page p{
+  text-align: justify;
+
+}
+.vip_section2 p{
+  text-align: justify;
+}
 .navbar-toggler{
   width: 47px;
   height: 34px;
@@ -100,7 +113,7 @@
           transform: translate(-50%, -50%);
 }
 
-.hero-text h1 {
+.hero-text h2 {
   color: white;
 }
 
