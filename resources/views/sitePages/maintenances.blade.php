@@ -16,8 +16,7 @@
 
     <div class="padding text-center section1">
         <h1>Property Maintenance</h1>
-        <p>We value your trust! 
-</p>
+    </p>
     </div>
     <div class="row section2 mx-0 padding">
         <div class="col-lg-5 col-md-5 col-sm-12 col-12 p-0">

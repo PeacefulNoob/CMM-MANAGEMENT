@@ -7,7 +7,7 @@
     <div class="hero">
         <div class="hero-image">
             <div class="hero-text">
-                <h2>PUT YOUR HOME IN TRUSTED HANDS</h2>
+                <h1>PUT YOUR HOME IN TRUSTED HANDS</h1>
             </div>
         </div>
     </div>

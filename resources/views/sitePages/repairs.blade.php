@@ -16,7 +16,6 @@
 
     <div class="padding text-center section1">
         <h1>Renovations & Repairs </h1>
-        <p>Transforming homes into our clients’ dream visions</p>
     </div>
     <div class="row section2 mx-0 padding">
         <div class="col-lg-5 col-md-5 col-sm-12 col-12 p-0">

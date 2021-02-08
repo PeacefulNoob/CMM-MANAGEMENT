@@ -16,7 +16,6 @@
 
     <div class="padding text-center section1">
         <h1>Furnishing & Design</h1>
-        <p>You only need to define the stile you like and we will do the rest for you!</p>
     </div>
     <div class="row section2 mx-0 padding">
         <div class="col-lg-5 col-md-5 col-sm-12 col-12 p-0">
@@ -31,8 +30,8 @@
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12 slikaDRM col-12 mb-4 pl-4 pr-0">
             <div id="cf">
-            <img class="bottom" src="/assets/images/designF.JPG" />
-            <img class="top" src="/assets/images/designF1.jpg" />
+            <img class="bottom" src="/assets/images/designF1.jpg" />
+            <img class="top" src="/assets/images/designF.jpg" />
              </div>
         </div>
 

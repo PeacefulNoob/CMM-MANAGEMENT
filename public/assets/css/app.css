@@ -113,8 +113,9 @@
           transform: translate(-50%, -50%);
 }
 
-.hero-text h2 {
+.hero-text h1 {
   color: white;
+  font-size: 40px;
 }
 
 .hero-text button {
@@ -442,37 +443,40 @@ width: auto;
  height:100%;  
  width:100%;  
  margin:0 auto;
+ min-height: 30vh;
  } 
 
  #cf img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   position:absolute;
+   left:0;
+   -webkit-transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+   -o-transition: opacity 1s ease-in-out;
+   transition: opacity 1s ease-in-out;
 }
-
- @keyframes cf3FadeInOut {
+@keyframes cf3FadeInOut {
   0% {
   opacity:1;
-  }
-  45% {
-  opacity:1;
-  }
-  55% {
-  opacity:0;
-  }
-  100% {
-  opacity:0;
-  }
-  }
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
 
 #cf3 img.top {
 animation-name: cf3FadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
-animation-duration: 2s;
+animation-duration: 10s;
 animation-direction: alternate;
 }
 
@@ -691,6 +695,9 @@ animation-direction: alternate;
 color: white;
 
 }
+.abouts1  P{
+  text-align: justify;
+}
 .cblue{
   color:#1D4C81;
   font-weight: 500 !important;
@@ -698,7 +705,9 @@ color: white;
 .abouts2 {
   color: #1D4C81;
 }
-
+.abouts2  P{
+  text-align: justify;
+}
 .abouts3 {
 
 }
@@ -713,10 +722,14 @@ h1{
 .abouts5 {
   color: #1D4C81;
 }
-
+.abouts5  P{
+  text-align: justify;
+}
 .abouts6 {
   color: #1D4C81;
 }
+.abouts6 p{
+text-align: justify;}
 
 .abouts6 h6 {
   color: black;
@@ -758,7 +771,9 @@ h1{
   width: 70%;
   padding-bottom: 20px;
 }
-
+.section4 p{
+  text-align: justify;
+}
 .news h1 {
   color: #1D4C81;
   font-weight: 800;
@@ -767,7 +782,9 @@ h1{
 .news p {
   color: #7E7E7E;
 }
-
+.packetMain p {
+  text-align: justify;
+}
 .buttonBlue {
   color: white;
   background-color: #1D4C81;
@@ -847,13 +864,18 @@ color: #8B783B;
   width: 14%;
   max-width: 14%;
 }
-.vips h5{
-  
+.vips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #8b783b;
-  padding: 10px;
+  padding: 4px;
   margin: 9px;
   border-radius: 5px;
   height: 65PX;
+  text-align: CENTER;
+}
+.vips h5{
   text-align: CENTER;
 }
 /*# sourceMappingURL=app.css.map */
