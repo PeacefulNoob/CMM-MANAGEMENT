@@ -13,12 +13,7 @@
     <meta name="keywords" content="real estate,apartments,apartment,house,summer,crna gora,montenegro,enjoy,winter,top,luxury,afordable,reasonable,kotor,sea,house,lovely">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="PeacefulNoob">  
-{{--
-    <link rel="shortcut icon" href="/bitrix/templates/ru_design/img/logos/favicon.png">
-    <link rel="apple-touch-icon" href="/bitrix/templates/ru_design/img/logos/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/bitrix/templates/ru_design/img/logos/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/bitrix/templates/ru_design/img/logos/apple-touch-icon-114x114.png">
-    --}}
+
     <meta property="og:image" content="https://cmm-management.com/assets/images/favicon1.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cmm-management.com/" />
@@ -65,6 +60,18 @@
 
     <div id="app">
         <main class="">
+            @can('adminPriv')
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </div>
+            @endcan
             @include('components.alerts')
             @yield('content')
         </main>

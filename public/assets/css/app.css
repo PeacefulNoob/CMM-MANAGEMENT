@@ -102,12 +102,15 @@
   padding-top: 2%;
   padding-bottom: 2%;
 }
-.section6 h1{
-}
+
 .hero-text {
+  background-color: #0000006e;
+    padding: 20px;
+    border-radius: 5px;
   text-align: center;
   position: absolute;
   top: 50%;
+  width: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -437,6 +440,72 @@ width: auto;
   margin: 3px;
 }
 
+
+#xfade2  {
+  position:relative;  
+  height:100%;  
+  width:100%;  
+  margin:0 auto;
+  min-height: 30vh;
+	}
+
+ #xfade2 img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+	}
+
+
+@-webkit-keyframes xf2FadeInOut{
+	0% {
+		opacity : 1;
+		}
+	45% {
+		opacity : 1;
+		}
+	55% {
+		opacity : 0;
+		}
+	100% {
+		opacity : 0;
+		}
+  }
+  @keyframes xf2FadeInOut{
+    0% {
+      opacity : 1;
+      }
+    45% {
+      opacity : 1;
+      }
+    55% {
+      opacity : 0;
+      }
+    100% {
+      opacity : 0;
+      }
+    }
+
+#xfade2 img.top {
+	-webkit-animation-name            : xf2FadeInOut;
+	-webkit-animation-timing-function : ease-in-out;
+	-webkit-animation-iteration-count : infinite;
+	-webkit-animation-duration        : 6s;
+  -webkit-animation-direction       : alternate;
+    animation-name: xf2FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
+	}
+
+		
+/* 
  #cf 
  {  
  position:relative;  
@@ -478,7 +547,7 @@ animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
 animation-duration: 10s;
 animation-direction: alternate;
-}
+} */
 
 .property-index .owl-dots .active {
   background: #1D4C81 !important;

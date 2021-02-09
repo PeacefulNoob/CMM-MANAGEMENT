@@ -29,10 +29,14 @@
                 collaborating with the best furniture salons. Together, we can create the home of your dreams.</p>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12 slikaDRM col-12 mb-4 pl-4 pr-0">
-            <div id="cf">
+   {{--          <div id="cf">
             <img class="bottom" src="/assets/images/designF1.jpg" />
             <img class="top" src="/assets/images/designF.jpg" />
-             </div>
+             </div> --}}
+             <div id="xfade2" class="shaddow" >
+                <img class="bottom" src="/assets/images/designF1.jpg" />
+                <img class="top" src="/assets/images/designF.jpg" />
+			</div >
         </div>
 
         <p>Being in the business for many years, we have the experience to know what standards will meet your
