@@ -6,8 +6,7 @@
   text-transform: uppercase;
 }
 .header {
-  position: fixed;
-  z-index: 2;
+  z-index: 222;
   width: 100%;
   background-color: #ffffffe0;
 }
@@ -15,6 +14,23 @@
   max-height: 60vh;
   height: 60vh;
 }
+.adminHeader{
+
+  height: 40px;
+  display: flex;
+  color: white;
+  background-color: #1d4c81;
+}
+.adminHeader h5{
+padding: .5rem 1rem;
+margin: auto;
+display: block;
+}
+.adminHeader a{
+  color: white !important;
+
+  }
+
 .hero-image {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("/assets/images/mainMain.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/images/mainMain.png");

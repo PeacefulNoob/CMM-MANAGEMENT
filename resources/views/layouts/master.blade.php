@@ -56,22 +56,24 @@
     <!--End of Tawk.to Script-->
 </head>
 <body>
+@auth
+<div class='adminHeader'>
+<h5>Hello, you have been logged in</h5>
+    <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+        {{ __('Logout') }}
+    </a>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+    </form>
+</div>
+@endauth
     @include('layouts.header')
 
     <div id="app">
-        <main class="">
-            @can('adminPriv')
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                </a>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                </form>
-            </div>
-            @endcan
+        <main class="">
+           
             @include('components.alerts')
             @yield('content')
         </main>
