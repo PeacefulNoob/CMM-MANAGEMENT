@@ -42,6 +42,7 @@ class NewsController extends Controller
     {
         if ($id == 0 ) {
             $news = News::all();
+            
         }else{
             $news = News::where('new_categories_id',$id)->get();
         }
@@ -141,9 +142,9 @@ class NewsController extends Controller
      * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function show(News $news)
+    public function show($lang,$id)
     {
-        //
+        dd($id);
     }
 
     /**

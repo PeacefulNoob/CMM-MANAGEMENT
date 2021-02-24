@@ -27,7 +27,7 @@ p {
             <div class="owl-navigation owl-carousel blogs_owl owl-theme ">
                 @foreach($blogs as $blog)
                     <div class="card" style="border:none">
-                    <a href="/single_news/{{$blog->id}}">
+                    <a href="/{{app()->getLocale()}}/single_news/{{$blog->id}}">
                         <img class="card-img-top blog_image" src="/{{ $blog->image }}" alt="Card image cap">
                         </a>
                         <div class="card-body">

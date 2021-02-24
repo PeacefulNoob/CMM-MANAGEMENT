@@ -31,16 +31,12 @@
   
     <div class="section3 ">
         <div class="padding  "> 
-            <h3 class=""> Services that we offer: </h3>
+            <h3 class=""> Our department is at your service!  </h3>
             <ul class="list-unstyled ">
-                <li> - &nbsp; &nbsp; &nbsp; Payment of utility services </li>
-                <li> - &nbsp; &nbsp; &nbsp; Checking the communications </li>
-                <li> - &nbsp; &nbsp; &nbsp; Airing real estate </li>
-                <li> - &nbsp; &nbsp; &nbsp; Cleaning the property </li>
-                <li> - &nbsp; &nbsp; &nbsp; Airport transfer </li>
-                <li> - &nbsp; &nbsp; &nbsp; General cleaning before client`s arrival </li>
-                <li> - &nbsp; &nbsp; &nbsp; Photo report</li>
-                <li> - &nbsp; &nbsp; &nbsp; Manager assistance</li>
+                <li> - &nbsp; &nbsp; &nbsp; Minor installation repairs </li>
+                <li> - &nbsp; &nbsp; &nbsp; Sanitary repairs </li>
+                <li> - &nbsp; &nbsp; &nbsp; Cosmetic renovations </li>
+           
 
             </ul>
     </div>

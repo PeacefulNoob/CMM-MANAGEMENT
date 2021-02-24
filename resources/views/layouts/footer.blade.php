@@ -7,20 +7,20 @@
                     <h4>OUR SERVICES</h4>
                 </li>
                 <li>
-                    <a href="/vip">VIP</a>
+                    <a href="/{{app()->getLocale()}}/vip">VIP</a>
                 </li>
                 <li class="">
-                    <a class="" href="/designs">Furnishing & Design <span class="sr-only">(current)</span></a>
+                    <a class="" href="/{{app()->getLocale()}}/designs">Furnishing & Design <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="">
-                    <a class="" href="/maintenances">Property Maintenance</a>
+                    <a class="" href="/{{app()->getLocale()}}/maintenances">Property Maintenance</a>
                   </li>
        
                   <li class="">
-                    <a class="" href="/repairs">Renovations & Repairs</a>
+                    <a class="" href="/{{app()->getLocale()}}/repairs">Renovations & Repairs</a>
                   </li>
                   <li>
-                    <a href="/faqs"> FaQ </a>
+                    <a href="/{{app()->getLocale()}}/faqs"> FaQ </a>
                 </li>
 
             </ul>
@@ -92,7 +92,7 @@
 					?>
                 @foreach($blogs as $blog)
                 <li>
-                    <a target="_blank" href="/single_news/{{$blog->id}}">{{$blog->title}}</a>
+                    <a target="_blank" href="/{{app()->getLocale()}}/single_news/{{$blog->id}}">{{$blog->title}}</a>
                 </li>
                 <?php	
                 if ($i++ == 6)

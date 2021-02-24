@@ -12,43 +12,58 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('designs','DesignContoller');
-Route::resource('news','NewsController');
-Route::resource('maintenances','MaintenanceController');
-Route::resource('repairs','RepairsController');
-Route::resource('faqs','FaqController');
 
-Route::get('/all_news/{id}','NewsController@all_news');
-Route::get('/about', 'SiteController@about')->name('about');
-Route::get('/vip', 'SiteController@vip')->name('vip');
-Route::get('/single_news/{id}', 'SiteController@single_news')->name('single_news');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
-    Route::resource('/users','UsersController',['except' => ['show','create','store']]);
-
-
+Route::get('/', function () {
+    return redirect(app()->getLocale());
 });
 
-Route::group(['middleware' => 'can:adman'], function() {
-    Route::get('/home', 'HomeController@index')->name('admin/home');\
-    Route::get('/all_maintenances','MaintenanceController@index1');
-    Route::get('/all_designs','DesignContoller@index1');
+ Route::get('/setLocaleRout/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return redirect(app()->getLocale());
+            })->name('setLocaleRout');
 
+ Route::prefix('{lang?}')->middleware('setlocale')->group(function() {
+  
+        Route::resource('designs','DesignContoller');
+        Route::resource('news','NewsController');
+        Route::resource('maintenances','MaintenanceController');
+        Route::resource('repairs','RepairsController');
+        Route::resource('faqs','FaqController');
+
+        Route::get('/all_news/{id}','NewsController@all_news');
+        Route::get('/about', 'SiteController@about')->name('about');
+        Route::get('/vip', 'SiteController@vip')->name('vip');
+        Route::get('/single_news/{id}', 'SiteController@single_news')->name('single_news');
+
+        Auth::routes();
+
+        Route::get('/home', 'HomeController@index')->name('home');
+        
+
+        Route::get('/', 'SiteController@index')->name('home');
+
+        Route::post('Inquiry', [
+            'uses' => 'EmailController@exc',
+            'as' => 'contact.store.main'
+        ]);
+        Route::get('/summernote-image','NewsController@image');
+
+        Route::post('summernote-image',array('as'=>'summernote.image.upload','uses'=>'NewsController@uploada'));
 });
+    Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+        Route::resource('/users','UsersController',['except' => ['show','create','store']]);
 
-Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
-    Route::resource('/users','UsersController',['except' => ['show','create','store']]);
 
-});
-Route::get('/', 'SiteController@index')->name('home');
+    });
 
-Route::post('Inquiry', [
-    'uses' => 'EmailController@exc',
-    'as' => 'contact.store.main'
-]);
-Route::get('/summernote-image','NewsController@image');
+    Route::group(['middleware' => 'can:adman'], function() {
+        Route::get('/home', 'HomeController@index')->name('admin/home');\
+        Route::get('/all_maintenances','MaintenanceController@index1');
+        Route::get('/all_designs','DesignContoller@index1');
 
-Route::post('summernote-image',array('as'=>'summernote.image.upload','uses'=>'NewsController@uploada'));
+    });
+
+    Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+        Route::resource('/users','UsersController',['except' => ['show','create','store']]);
+
+    });
