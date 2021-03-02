@@ -2,7 +2,7 @@
 
 return [
 
-    'title' => 'Ruski',
-    'design' => 'Ruski',
+    'title' => 'СДЕЛАЙТЕ СВОЙ ДОМ В НАДЕЖНЫЕ РУКИ',
+
 
 ];

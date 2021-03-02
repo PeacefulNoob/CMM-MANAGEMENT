@@ -439,7 +439,7 @@ width: auto;
 }
 .property-index .owl-dots {
   position: absolute;
-  top: 15%;
+  top: 22%;
   left: 50%;
   background-color: #ADDBEF;
   -webkit-transform: translate(-50%, 0%);
@@ -730,7 +730,7 @@ animation-direction: alternate;
 }
 
 .naslovMain {
-  margin-bottom: 8%;
+  margin-bottom: 12%;
 }
 .naslovMain h1{
   color: #1D4C81;

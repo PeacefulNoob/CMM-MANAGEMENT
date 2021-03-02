@@ -13,7 +13,7 @@
 <div class="homeMain news">
 
     <div class="paddinglr text-center">
-        <h1>Welcome to our blog</h1>
+        <h1>{{__('footer.news_page')}}</h1>
         <p> 
         @foreach($categories as $category)
        <a href="/all_news/{{$category->id}}">{{$category->title}}</a>  &nbsp/&nbsp

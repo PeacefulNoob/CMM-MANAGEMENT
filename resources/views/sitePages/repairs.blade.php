@@ -19,8 +19,8 @@
     </div>
     <div class="row section2 mx-0 padding">
         <div class="col-lg-5 col-md-5 col-sm-12 col-12 p-0">
-            <h3>Transforming homes into our clients’ dream visions</h3>
-            <p>Even though the real estate is brand new, or old one, there is always need to renovate and repair something. Home renovation can increase the value of your home for sale or simply make your home more comfortable to live in now.</p>
+            <h3>{{__('renovations_page.title_property_maintenance') }}</h3>
+            <p>{{__('renovations_page.transforming_homes_description') }}</p>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12 col-12 slikaDRM mb-4 pl-4 pr-0">
             <img src="/assets/images/renovationR.png" alt="">
@@ -31,11 +31,11 @@
   
     <div class="section3 ">
         <div class="padding  "> 
-            <h3 class=""> Our department is at your service!  </h3>
+            <h3 class=""> {{__('renovations_page.title_department_services') }}  </h3>
             <ul class="list-unstyled ">
-                <li> - &nbsp; &nbsp; &nbsp; Minor installation repairs </li>
-                <li> - &nbsp; &nbsp; &nbsp; Sanitary repairs </li>
-                <li> - &nbsp; &nbsp; &nbsp; Cosmetic renovations </li>
+                <li> - &nbsp; &nbsp; &nbsp; {{__('renovations_page.department_services_nabrajanje1') }}</li>
+                <li> - &nbsp; &nbsp; &nbsp; {{__('renovations_page.department_services_nabrajanje2') }} </li>
+                <li> - &nbsp; &nbsp; &nbsp;{{__('renovations_page.department_services_nabrajanje3') }} </li>
            
 
             </ul>
@@ -51,45 +51,45 @@
             {{ csrf_field() }}
             <input type="hidden" class="form-control" name="title" id="title" value="Renovations & Repairs">
 
-               <div class="form-group">
-                    <h3> IF YOU ARE INTERESTED IN Renovations & Repairs </h3>
-                </div>
-                <div class="form_inquiry">
-                    <div class="form-row m-0">
-                        <div class="form-group col-md-6 form_inquiry_left">
-                            <label for="name">YOUR NAME</label>
-                            <input type="text" class="form-control" name="name" id="name"
-                                placeholder="Put the name and surname please " required>
-                                <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-                        </div>
-                        <div class="form-group col-md-6 form_inquiry_right ">
-                            <label for="email">E-MAIL ADRESS?</label>
-                            <input type="email" class="form-control" name="email" id="email"
-                                placeholder="Put your e-mail adress please" required>
-                                <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-                        </div>
-                    </div>
-                        <div class="form-group  form_inquiry_bot ">
-                            <label for="message">MESSAGE</label>
-                            <textarea class="form-control" name="message" id="message" cols="30" rows="7" required>What may we help you with?</textarea>
+            <div class="form-group">
+                <h3>{{__('maintenance_page.title_form')}} </h3>
+            </div>
+            <div class="form_inquiry">
+                <div class="form-row m-0">
+                    <div class="form-group col-md-6 form_inquiry_left">
+                        <label for="name">{{__('maintenance_page.form_your_name')}}</label>
+                        <input type="text" class="form-control" name="name" id="name"
+                            placeholder="{{__('maintenance_page.form_your_name_placeholder')}} " required>
                             <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-                        
+                                        Looks good!
+                                    </div>
+                    </div>
+                    <div class="form-group col-md-6 form_inquiry_right ">
+                        <label for="email">{{__('maintenance_page.form_email_adress')}}</label>
+                        <input type="email" class="form-control" name="email" id="email"
+                            placeholder="{{__('maintenance_page.form_email_placeholder')}}" required>
+                            <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
                     </div>
                 </div>
-                <div class="form-group btnI text-center">
-                  <button type="submit" class="btn btn-inquiry">SEND INQURY</button>
-                  <p>Our agent will get back to you with the answer as soon as possible</p>
-              </div>
+                    <div class="form-group  form_inquiry_bot ">
+                        <label for="message">{{__('maintenance_page.form_message')}}</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="7" required>{{__('maintenance_page.form_message_placeholder')}}</textarea>
+                        <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                    
+                </div>
+            </div>
+            <div class="form-group btnI text-center">
+              <button type="submit" class="btn btn-inquiry">{{__('maintenance_page.button_send_inqury')}}</button>
+              <p>{{__('maintenance_page.button_send_inqury_description')}}</p>
+          </div>
 
-             
+         
 
-        </form>
+    </form>
     </div>
 
   

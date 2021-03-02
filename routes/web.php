@@ -21,6 +21,7 @@ Route::get('/', function () {
     App::setlocale($lang);
     return redirect(app()->getLocale());
             })->name('setLocaleRout');
+Auth::routes();
 
  Route::prefix('{lang?}')->middleware('setlocale')->group(function() {
   
@@ -35,7 +36,6 @@ Route::get('/', function () {
         Route::get('/vip', 'SiteController@vip')->name('vip');
         Route::get('/single_news/{id}', 'SiteController@single_news')->name('single_news');
 
-        Auth::routes();
 
         Route::get('/home', 'HomeController@index')->name('home');
         
@@ -48,16 +48,16 @@ Route::get('/', function () {
         ]);
         Route::get('/summernote-image','NewsController@image');
 
-        Route::post('summernote-image',array('as'=>'summernote.image.upload','uses'=>'NewsController@uploada'));
 });
     Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
         Route::resource('/users','UsersController',['except' => ['show','create','store']]);
 
 
     });
+    Route::post('summernote-image',array('as'=>'summernote.image.upload','uses'=>'NewsController@uploada'));
 
     Route::group(['middleware' => 'can:adman'], function() {
-        Route::get('/home', 'HomeController@index')->name('admin/home');\
+        Route::get('/home', 'HomeController@index')->name('admin/home');
         Route::get('/all_maintenances','MaintenanceController@index1');
         Route::get('/all_designs','DesignContoller@index1');
 

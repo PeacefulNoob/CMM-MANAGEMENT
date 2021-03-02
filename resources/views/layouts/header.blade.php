@@ -13,28 +13,28 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ml-auto my-2">
                   <li class="nav-item">
-                    <a class="nav-link" href= '/{{app()->getLocale()}}/maintenances'><h5>Property</h5><h5> Maintenance</h5></a>
+                    <a class="nav-link" href= '/{{app()->getLocale()}}/maintenances'><h5>{{__('footer.nav1')}}</h5><h5> {{__('footer.nav12')}}</h5></a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="/{{app()->getLocale()}}/designs"><h5>Furnishing</h5><h5> & Design</h5> <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/{{app()->getLocale()}}/designs"><h5>{{__('footer.nav2')}}</h5><h5> {{__('footer.nav22')}}</h5> <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/{{app()->getLocale()}}/repairs"><h5>Renovations </h5><h5>& Repairs</h5></a>
+                    <a class="nav-link" href="/{{app()->getLocale()}}/repairs"><h5>{{__('footer.nav3')}} </h5><h5>{{__('footer.nav33')}}</h5></a>
                   </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item ">
-                    <a class="nav-link" href="/{{app()->getLocale()}}/all_news/0"><h5>News</h5></a>
+                    <a class="nav-link" href="/{{app()->getLocale()}}/all_news/0"><h5>{{__('footer.nav4')}}</h5></a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="/{{app()->getLocale()}}/about"><h5>About us </h5></a>
+                    <a class="nav-link" href="/{{app()->getLocale()}}/about"><h5>{{__('footer.nav5')}} </h5></a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="/{{app()->getLocale()}}/about#about_contact"><h5>Contact us</h5></a>
+                  <a class="nav-link" href="/{{app()->getLocale()}}/about#about_contact"><h5>{{__('footer.nav6')}}</h5></a>
                   </li>
                 
                   <li class="nav-item vipLink">
-                    <a class="nav-link " href="/{{app()->getLocale()}}/vip"><h5> VIP </h5></a>
+                    <a class="nav-link " href="/{{app()->getLocale()}}/vip"><h5> {{__('footer.nav7')}}</h5></a>
                   </li>
                   
                     @foreach (config('app.languages') as $locale)
