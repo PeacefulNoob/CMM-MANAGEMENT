@@ -18,7 +18,7 @@ class NewsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('can:adman')->except('show','all_news');
+        $this->middleware('can:adman')->except('show','all_blogs');
 
     }
     /**

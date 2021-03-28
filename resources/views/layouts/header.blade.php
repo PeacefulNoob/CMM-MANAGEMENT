@@ -37,14 +37,27 @@
                     <a class="nav-link " href="/{{app()->getLocale()}}/vip"><h5> {{__('footer.nav7')}}</h5></a>
                   </li>
                   
-                    @foreach (config('app.languages') as $locale)
-                 
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="{{ route('setLocaleRout', $locale) }}"
-                                @if (app()->getLocale() == $locale) style="font-weight: bold; text-decoration: underline" @endif>{{ strtoupper($locale) }}</a>
-                        </li> 
-                    @endforeach
+                  @foreach (config('app.languages') as $locale)
+                  @if($locale == "rus")
+                                  <li class="nav-item flags">
+                                      <a class="nav-link"
+                                          href="{{ route('setLocaleRout', $locale) }}"
+                                          @if (app()->getLocale() == $locale) style="border: 2px solid #1D4C81 ; " @endif>
+                                          <img src="/assets/images/ru.svg" alt="rus">
+                                        </a>
+                                  </li> 
+                  @elseif($locale == "en")
+
+                                  <li class="nav-item flags">
+                                      <a class="nav-link"
+                                          href="{{ route('setLocaleRout', $locale) }}"
+                                          @if (app()->getLocale() == $locale) style="border: 2px solid #1D4C81 ; " @endif>   
+                                                           <img src="/assets/images/en.svg" alt="en">
+                                        </a>
+                                  </li> 
+                    
+                  @endif
+            @endforeach
                 </ul>
               </div>
             </nav>

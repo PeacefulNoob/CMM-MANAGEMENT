@@ -74,7 +74,6 @@
                                 <li> {{__('maintenance_page.exterior_maintenance_description_nabrajanje8')}}</li>
                             </ul>
                         </div>
-                        <a href="/">{{__('design_page.view_all_details')}}</a>
               </div>
               <div class="packet maintPacket p-4">
                     <p>{{__('maintenance_page.sub_title_property_maintenance')}}</p>
@@ -92,7 +91,6 @@
                                 <li> {{__('maintenance_page.interior_maintenance_description_nabrajanje8')}}</li>
                             </ul>
                       </div>
-                        <a href="/">{{__('design_page.view_all_details')}}</a>
                 </div>
        </div>
     </div>

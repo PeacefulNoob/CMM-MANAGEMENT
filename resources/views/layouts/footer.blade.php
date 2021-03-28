@@ -28,11 +28,11 @@
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <ul class="list-unstyled footerLista">
                 <li>
-                    <h4>INFORMATION </h4>
+                    <h4>{{__('footer.information_title')}}</h4>
                 </li>
                 <li>
                     <div class="d-flex">
-                        <div > <p class="bold pr-1"> Address:</p></div>
+                        <div > <p class="bold pr-1">{{__('footer.info_address')}}</p></div>
                         <div>
                             <p>Jadranski put b.b. Budva, Montenegro</p>
                             <p> Adress 2, Moskow, Russia</p>
@@ -42,13 +42,13 @@
                 <li>
                     <div class="d-flex">
                         <div><p class="bold pr-1"> 
-                            Telephone:</p></div>
-                        <div>    <p> + 382 68 010 879</p></div>
+                            {{__('footer.info_telephone')}}</p></div>
+                            <div>    <p> + 382 68 010 879</p></div>
                     </div>
                 </li>
                 <li>
                     <div class="d-flex">
-                        <div><p class="bold pr-1"> Email address:</p></div>
+                        <div><p class="bold pr-1">{{__('footer.info_email')}}</p></div>
                         <div>  <p>management@cmm-montenegro.com</p></div>
                     </div>
                 </li>
@@ -62,13 +62,13 @@
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <ul class="list-unstyled footerLista">
                 <li>
-                    <h4>USEFUL LINKS</h4>
+                    <h4>{{__('footer.useful_link_title')}}</h4>
                 </li>
                 <li>
-                    <a target="_blank" href="https://mek.gov.me/en/ministry">Ministery of Economy</a>
+                    <a target="_blank" href="https://mek.gov.me/en/ministry">{{__('footer.ministery_1')}}</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://www.mif.gov.me/en/ministry">Ministery of Finance </a>
+                    <a target="_blank" href="https://www.mif.gov.me/en/ministry">{{__('footer.ministery_2')}}</a>
                 </li>
                  <li>
                     <ul>
@@ -83,7 +83,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <ul class="list-unstyled footerLista">
                 <li>
-                    <h4>LAST BLOGS</h4>
+                    <h4>{{__('footer.last_blogs_title')}}</h4>
                 </li>
                 @if(count($blogs) > 0)
                 <?php
@@ -110,11 +110,11 @@
     </div>
 
     <div class="footer2">
-    <div class="left_footer">
+    <div class="left_footer desktop">
             <p>© Copyright 2011 - 2020. CMM Investment Consulting Group.
 </p>
         </div>
-        <div class="right_footer">
+        <div class="right_footer desktop">
             <p>Made by QQRIQ</p>
         </div>
     </div>

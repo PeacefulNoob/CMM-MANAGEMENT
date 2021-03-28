@@ -106,7 +106,7 @@
             <p> + 382 68 010 879</p>
             <p> E-mail: office@cmm-montenegro.com </p>
             <p> www.cmm-montenegro.com </p>
-            <p>{{__('about_page.contact_adresa_russia') }}</p>
+            <p>{{__('about_page.contact_adresa_montenegro') }}</p>
             <p> Jadranski put b.b. Budva </p>
         </div>
     </div>

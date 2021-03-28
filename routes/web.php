@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
+Route::resource('news','NewsController');
 
 Route::get('/', function () {
     return redirect(app()->getLocale());
@@ -21,12 +23,10 @@ Route::get('/', function () {
     App::setlocale($lang);
     return redirect(app()->getLocale());
             })->name('setLocaleRout');
-Auth::routes();
 
  Route::prefix('{lang?}')->middleware('setlocale')->group(function() {
   
         Route::resource('designs','DesignContoller');
-        Route::resource('news','NewsController');
         Route::resource('maintenances','MaintenanceController');
         Route::resource('repairs','RepairsController');
         Route::resource('faqs','FaqController');

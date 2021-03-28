@@ -963,4 +963,14 @@ color: #8B783B;
 .vips h5{
   text-align: CENTER;
 }
+.flags a{
+  padding:2px !important;
+  border-radius: 50%;
+}
+.flags img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  
+}
 /*# sourceMappingURL=app.css.map */
