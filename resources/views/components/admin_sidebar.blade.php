@@ -52,6 +52,12 @@
                         <li><a class="slide-item" href="/news">List of all News  </a></li>
                     </ul>
                 </li>
+                <li class="slide"> <a class="side-menu__item" data-toggle="slide" href="#"><span class="side-menu__label dropdown-toggle">News RUS</span><i class="angle fe fe-chevron-down"></i></a>
+                    <ul class="slide-menu">
+                    <li><a class="slide-item" href="/news_rus/create">Add News post RUS</a></li>
+                        <li><a class="slide-item" href="/news_rus">List of all News  RUS</a></li>
+                    </ul>
+                </li>
                 @endcan
 
             </ul>

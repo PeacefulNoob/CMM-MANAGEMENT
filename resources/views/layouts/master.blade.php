@@ -73,7 +73,10 @@
     <div id="app">
 
         <main class="">
-           
+               @include('components.furnishModal1')
+               @include('components.furnishModal2')
+               @include('components.furnishModal3')
+
             @include('components.alerts')
             @yield('content')
         </main>

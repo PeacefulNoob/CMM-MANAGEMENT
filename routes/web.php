@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 Route::resource('news','NewsController');
+Route::resource('news_rus','Blog_rusController');
+Route::resource('faqs','FaqController');
 
 Route::get('/', function () {
     return redirect(app()->getLocale());
@@ -29,7 +31,6 @@ Route::get('/', function () {
         Route::resource('designs','DesignContoller');
         Route::resource('maintenances','MaintenanceController');
         Route::resource('repairs','RepairsController');
-        Route::resource('faqs','FaqController');
 
         Route::get('/all_news/{id}','NewsController@all_news');
         Route::get('/about', 'SiteController@about')->name('about');

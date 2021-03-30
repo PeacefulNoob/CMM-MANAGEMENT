@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog_rus;
 use App\News;
 use App\NewCategories;
 use Validator;
@@ -18,7 +19,7 @@ class NewsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('can:adman')->except('show','all_blogs');
+        $this->middleware('can:adman')->except('show','all_news');
 
     }
     /**
@@ -29,8 +30,7 @@ class NewsController extends Controller
     public function index()
     {
         $news = News::orderBy('id', 'DESC')->get();
-
-         return view('admin.allNews',compact('news'));
+        return view('admin.allNews',compact('news'));
     }
     
     /**
@@ -38,17 +38,25 @@ class NewsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function all_news($id)
+    public function all_news($lang,$id)
     {
-        if ($id == 0 ) {
-            $news = News::all();
-            
-        }else{
-            $news = News::where('new_categories_id',$id)->get();
-        }
-        $blogs = News::orderBy('id', 'DESC')->get();
+        if(app()->getLocale()== 'en'){
 
-        $categories = NewCategories::all();
+            if ($id == 0 ) {
+                $news = News::all();
+                
+            }else{
+                $news = News::where('new_categories_id',$id)->get();
+            }
+                $blogs = News::orderBy('id', 'DESC')->get();
+
+        }else{
+
+            $blogs = Blog_rus::orderBy('id', 'DESC')->get();
+            $news = Blog_rus::orderBy('id', 'DESC')->get();
+
+        }
+            $categories = NewCategories::all();
          return view('sitePages.news',compact('news','categories','blogs'));
     }
     /**

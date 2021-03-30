@@ -12,4 +12,7 @@ class NewCategories extends Model
     public function news(){
         return $this->hasMany('App\News');
     }
+    public function news_rus(){
+        return $this->hasMany('App\Blog_rus');
+    }
 }

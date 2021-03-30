@@ -78,7 +78,7 @@
                             <li> {{__('design_page.economy_nabrajanje6')}}</li>
                             </ul>
                         </div>
-                        <a href="/">{{__('design_page.view_all_details')}}</a>
+                        <a href="#" data-toggle="modal" data-target="#fmodal1">{{__('design_page.view_all_details')}}</a>
               </div>
               <div class="packet designPacket p-4">
               <p>{{__('design_page.subtitle_furnishing_section')}}</p>
@@ -94,7 +94,7 @@
                             <li>{{__('design_page.standard_nabrajanje6')}}</li>
                             </ul>
                       </div>
-                        <a href="/">{{__('design_page.view_all_details')}}</a>
+                        <a href="#" data-toggle="modal" data-target="#fmodal2">{{__('design_page.view_all_details')}}</a>
                 </div>
                 <div class="packet designPacket p-4">
                 <p>{{__('design_page.subtitle_furnishing_section')}}</p>
@@ -110,7 +110,7 @@
                             <li> {{__('design_page.premium_nabrajanje6')}}</li>
                             </ul>
                       </div>
-                        <a href="/">{{__('design_page.view_all_details')}}</a>
+                        <a href="#" data-toggle="modal" data-target="#fmodal3">{{__('design_page.view_all_details')}}</a>
                 </div>
        </div>
             </div> 

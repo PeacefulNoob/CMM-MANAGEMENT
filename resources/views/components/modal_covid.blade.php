@@ -13,12 +13,7 @@
                 <p class="covid-text">
             
                    </p>
-                  
-                    @can('admin')
-
-                        <a href="{{ route('covids.edit',$covid->id) }}"><button
-                                type="button" class="btn btn-warning">Edit</button></a> </td>
-                    @endcan
+                
             </div>
         </div>
         <div class="modal-footer">
