@@ -973,4 +973,15 @@ color: #8B783B;
   border-radius: 50%;
   
 }
+.modal-design {
+  width: 90vw !important;
+  max-width: 90vw !important;
+  margin: auto;
+}
+.modal-design img {
+  border-radius: 5px;
+}
+.modal-design button img {
+  width: 65% !important;
+}
 /*# sourceMappingURL=app.css.map */

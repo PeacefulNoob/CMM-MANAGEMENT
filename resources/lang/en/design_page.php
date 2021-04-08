@@ -57,6 +57,14 @@ as the CMM team is skilled in handling all aspects of a design job, including pr
 'premium_nabrajanje6'=> 'Highend brand household accessories',
 'view_all_details' => 'View all the details',
 
+'examples'=> ' Examples of equipped apartments:',
+'standard_p' => 'The standard package is suitable for furnishing the apartment for the purpose of renting, as well as for the stay of you and your family. We offer you the opportunity to equip your property with modern and quality furniture, appliances, lighting, curtains, decorations and accessories with minimal investment and prepare it for rent or for your own needs.
+',
+'premium_p' => '                  The premium variant contains the elements necessary to furnish the interior with luxurious and modern furniture, appliances, lighting, curtains, decorations and accessories of high quality. We also recommend this option of furnishing exclusive rental apartments.
 
+',
+'economy_p' => '                  Economy package involves equipping the apartment with furniture of optimum quality. We offer you the opportunity to equip your property with modern furniture, appliances, lighting, curtains, decorations and accessories with minimal investment.
+
+',
 ]
 ?>
